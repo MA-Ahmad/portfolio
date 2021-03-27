@@ -26,7 +26,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
     rounded={"md"}
     _hover={{
       textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700")
+      bg: useColorModeValue("gray.200", "gray.900")
     }}
     href={"#"}
   >
@@ -39,11 +39,7 @@ export default function Header() {
 
   return (
     <>
-      <Box
-        bg={useColorModeValue("gray.100", "gray.900")}
-        px={4}
-        boxShadow={"lg"}
-      >
+      <Box bg={useColorModeValue("white", "gray.700")} px={4} boxShadow={"lg"}>
         <Flex
           h={16}
           alignItems={"center"}
@@ -83,14 +79,22 @@ export default function Header() {
               size={"md"}
               icon={<FaGithub />}
               aria-label={"Github account"}
+              bg={useColorModeValue("white", "gray.700")}
+              _hover={{
+                textDecoration: "none",
+                bg: useColorModeValue("gray.200", "gray.900")
+              }}
             />
             <ColorModeSwitcher justifySelf="flex-end" />
           </Flex>
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} w={["90%", "85%", "80%"]}
-          maxW={750}
+          <Box
+            pb={4}
+            w={["90%", "85%", "80%"]}
+            maxW={750}
+            display={["inherit", "inherit", "none"]}
           >
             <Stack as={"nav"} spacing={4}>
               {Links.map(link => (
