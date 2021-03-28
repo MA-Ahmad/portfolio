@@ -10,7 +10,7 @@ export const repositories = [
       title: 'Blog App(React)',
       description:
         'A React Blog App built by using libraries like ChakraUI, Formik.',
-      languages: 'Javascript, React, ChakraUi, Formik',
+      technologies: ['react', 'chakraUi', 'formik'],
       cover: img1,
       url: 'https://github.com/MA-Ahmad/reactBlog',
       live: 'https://ma-ahmad.github.io/reactBlog',
@@ -22,7 +22,7 @@ export const repositories = [
       title: 'Blog App (Front-end)',
       description: 'React frontend of a blog app with rails on backend.',
       cover: img2,
-      languages: 'Javascript, React, ChakraUi',
+      technologies: ['react', 'chakraUi'],
       url: 'https://github.com/MA-Ahmad/blog-app-react-frontend',
       live: 'https://blog-frontend-react.herokuapp.com',
       stars: '6',
@@ -32,7 +32,7 @@ export const repositories = [
       title: 'Blog App (Back-end)',
       description: 'Rails backend api for blog app with react on frontend.',
       cover: img3,
-      languages: 'Ruby, Rails',
+      technologies: ['rails'],
       url: 'https://github.com/MA-Ahmad/blog-app-rails-backend',
       stars: '2',
       created: '21-4-2020'
@@ -41,7 +41,7 @@ export const repositories = [
       title: 'Notebook',
       description: 'Make notes for your daily work.',
       cover: img4,
-      languages: 'Typescript, React, ChakraUi',
+      technologies: ['typescript', 'react', 'chakraUi'],
       url: 'https://github.com/MA-Ahmad/notebook',
       live: 'https://ma-ahmad.github.io/notebook',
       stars: '2',
@@ -51,7 +51,7 @@ export const repositories = [
       title: 'Blog App',
       description: 'A simple react+rails(RR) CRUD app with tailwindcss.',
       cover: img5,
-      languages: 'Ruby, Rails, Javascript, React, TailwindCss',
+      technologies: ['rails', 'react', 'tailwindCss'],
       url: 'https://github.com/MA-Ahmad/react_rails_blog',
       live: 'https://react-on-rails-blog.herokuapp.com',
       stars: '2',
@@ -62,7 +62,7 @@ export const repositories = [
       description:
         'Simple Authentication API that can be used with any front-end app like React, Vue, Angular app.',
       cover: img6,
-      languages: 'Ruby, Rails',
+      technologies: ['rails'],
       url: 'https://github.com/MA-Ahmad/rails-authentication-app',
       stars: '1',
       created: '21-4-2020'
@@ -71,7 +71,7 @@ export const repositories = [
       title: 'Video-to-text',
       description: 'Convert a video to text using ruby.',
       cover: img6,
-      languages: 'Ruby',
+      technologies: ['ruby'],
       url: 'https://github.com/MA-Ahmad/Video-to-text',
       stars: '1',
       created: '21-4-2020'
