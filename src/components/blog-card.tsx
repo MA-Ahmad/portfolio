@@ -17,6 +17,7 @@ import { MotionBox } from "./motion";
 import { getTypeColor } from "../style/theme";
 import dev from "../assets/images/dev.png";
 import dev2 from "../assets/images/dev_white.png";
+import { CardTransition } from "./page-transitions";
 
 export interface BlogCardProps {
   article: article;
@@ -25,29 +26,8 @@ export interface BlogCardProps {
 const BlogCard: React.SFC<BlogCardProps> = ({ article }) => {
   const textColor = useColorModeValue("gray.500", "gray.200");
 
-  const variants = {
-    initial: {
-      opacity: 0,
-      translateY: -20
-    },
-    enter: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        y: { stiffness: 1000, velocity: -100 }
-      }
-    },
-    exit: {
-      y: 50,
-      opacity: 0,
-      transition: {
-        y: { stiffness: 1000 }
-      }
-    }
-  };
-
   return (
-    <MotionBox variants={variants}>
+    <CardTransition>
       <VStack
         spacing={1}
         p={4}
@@ -140,7 +120,7 @@ const BlogCard: React.SFC<BlogCardProps> = ({ article }) => {
           {article.desc}
         </Text>
       </VStack>
-    </MotionBox>
+    </CardTransition>
   );
 };
 
