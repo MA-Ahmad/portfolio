@@ -5,7 +5,6 @@ import Blog from "./blog";
 import RepositoriesList from "./repositories-list";
 import Home from "./home";
 
-export interface NavigationProps {}
 const routes = [
   { path: "/", exact: true, name: "Home", component: Home },
   { path: "/about", exact: true, name: "About", component: About },
@@ -18,7 +17,7 @@ const routes = [
   { path: "/blog", exact: true, name: "Blog", component: Blog }
 ];
 
-const Navigation: React.SFC<NavigationProps> = () => {
+const Navigation = () => {
   return (
     <Switch>
       {routes.map((route, idx) => (
