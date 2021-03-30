@@ -1,14 +1,8 @@
 import * as React from "react";
-import {
-  HashRouter as Router,
-  Route,
-  Switch,
-  Redirect
-} from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import About from "./about";
 import Blog from "./blog";
 import RepositoriesList from "./repositories-list";
-import Projects from "./projects";
 import Home from "./home";
 
 export interface NavigationProps {}
