@@ -7,7 +7,7 @@ import img6 from "../assets/images/cover_images/blog_3.png";
 
 export const repositories = [
     {
-      title: 'Blog App(React)',
+      title: 'Blog App',
       description:
         'A React Blog App built by using libraries like ChakraUI, Formik.',
       technologies: ['react', 'chakraUi', 'formik'],
@@ -19,7 +19,7 @@ export const repositories = [
       created: '21-4-2020'
     },
     {
-      title: 'Blog App (Front-end)',
+      title: 'Blog App (RR)',
       description: 'React frontend of a blog app with rails on backend.',
       cover: img2,
       technologies: ['react', 'chakraUi'],
@@ -29,7 +29,7 @@ export const repositories = [
       created: '21-4-2020'
     },
     {
-      title: 'Blog App (Back-end)',
+      title: 'Portfolio',
       description: 'Rails backend api for blog app with react on frontend.',
       cover: img3,
       technologies: ['rails'],
@@ -38,8 +38,8 @@ export const repositories = [
       created: '21-4-2020'
     },
     {
-      title: 'Notebook',
-      description: 'Make notes for your daily work.',
+      title: 'Image Gallery',
+      description: 'Simple gallery with images from the pixabay API. Tailwind css is built into workflow with postcss and autoprefixer.',
       cover: img4,
       technologies: ['typescript', 'react', 'chakraUi'],
       url: 'https://github.com/MA-Ahmad/notebook',
@@ -48,8 +48,8 @@ export const repositories = [
       created: '21-4-2020'
     },
     {
-      title: 'Blog App',
-      description: 'A simple react+rails(RR) CRUD app with tailwindcss.',
+      title: 'Notebook',
+      description: 'This is a notebook app which will help you to crate notes for your daily work.',
       cover: img5,
       technologies: ['rails', 'react', 'tailwindCss'],
       url: 'https://github.com/MA-Ahmad/react_rails_blog',
@@ -58,9 +58,9 @@ export const repositories = [
       created: '21-4-2020'
     },
     {
-      title: 'Authentication API',
+      title: 'Blogify',
       description:
-        'Simple Authentication API that can be used with any front-end app like React, Vue, Angular app.',
+        'A simple react+rails(RR) CRUD app with tailwindcss.',
       cover: img6,
       technologies: ['rails'],
       url: 'https://github.com/MA-Ahmad/rails-authentication-app',
@@ -70,7 +70,7 @@ export const repositories = [
     {
       title: 'Video-to-text',
       description: 'Convert a video to text using ruby.',
-      cover: img6,
+      cover: '',
       technologies: ['ruby'],
       url: 'https://github.com/MA-Ahmad/Video-to-text',
       stars: '1',
