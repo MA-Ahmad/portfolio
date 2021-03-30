@@ -1,8 +1,8 @@
-import PhaedraLogo from "../assets/images/phaedra.jpeg";
-import BrainxLogo from "../assets/images/brainxtech.png";
-import CodenyaLogo from "../assets/images/codenya.png";
-import BrainplowLogo from "../assets/images/brainplow.jpg";
-import UniLogo from "../assets/images/fast.png";
+import PhaedraLogo from "../assets/images/logos/phaedra.jpeg";
+import BrainxLogo from "../assets/images/logos/brainxtech.png";
+import CodenyaLogo from "../assets/images/logos/codenya.png";
+import BrainplowLogo from "../assets/images/logos/brainplow.jpg";
+import UniLogo from "../assets/images/logos/fast.png";
 
 export const companies = [
   {
