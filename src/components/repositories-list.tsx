@@ -6,7 +6,7 @@ import {
   SimpleGrid,
   Box
 } from "@chakra-ui/react";
-import PageTransition from "./page-transitions";
+import { PageSlideFade, StaggerChildren } from "./page-transitions";
 import { repositories } from "../data/repositories";
 import RepositoryCard from "./repository-card";
 import Header from "./header";
@@ -14,22 +14,9 @@ import { MotionBox } from "./motion";
 
 const TURQUOISE = "#06b6d4";
 
-const variants = {
-  initial: {
-    opacity: 0,
-    translateY: -20
-  },
-  enter: {
-    transition: { staggerChildren: 0.15, delayChildren: 0.4 }
-  },
-  exit: {
-    transition: { staggerChildren: 0.05, staggerDirection: -1 }
-  }
-};
-
 const RepositoriesList = () => {
   return (
-    <PageTransition>
+    <PageSlideFade>
       <VStack align="start" spacing={3}>
         <Header underlineColor={TURQUOISE} mt={0} mb={0}>
           Open Source
@@ -42,13 +29,7 @@ const RepositoriesList = () => {
           or contribute to.
         </Text>
       </VStack>
-      <MotionBox
-        animate={{
-          opacity: 1,
-          translateY: 0
-        }}
-        variants={variants}
-      >
+      <StaggerChildren>
         <SimpleGrid columns={[2, 2, 3]} spacing={4} mt={12}>
           {repositories.map((repo, index) => (
             <MotionBox whileHover={{ y: -5 }} key={index}>
@@ -67,8 +48,8 @@ const RepositoriesList = () => {
             </MotionBox>
           ))}
         </SimpleGrid>
-      </MotionBox>
-    </PageTransition>
+      </StaggerChildren>
+    </PageSlideFade>
   );
 };
 

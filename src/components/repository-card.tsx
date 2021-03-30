@@ -19,11 +19,16 @@ import {
   ModalBody,
   ModalHeader,
   Center,
-  Flex
+  Flex,
+  IconButton,
+  Tooltip
 } from "@chakra-ui/react";
 import { MotionBox } from "./motion";
+import { getTypeColor } from "../style/theme";
 import { AiOutlineStar, AiOutlineShareAlt } from "react-icons/ai";
-
+import { FiGithub } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { CardTransition } from "./page-transitions";
 // import { format } from "timeago.js";
 interface RepositoryCardProps {
   key: number;
@@ -62,44 +67,36 @@ const RepositoryCard = (props: RepositoryCardProps) => {
     // }
   };
 
-  const getTypeColor = type => {
-    if (type === "rails" || type === "ruby") {
-      return "red";
-    } else if (type === "react") {
-      return "cyan";
-    } else if (type === "javascript") {
-      return "yellow";
-    } else if (type === "typescript" || type === "tailwindCss") {
-      return "blue";
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLParagraphElement, MouseEvent>,
+    link: string
+  ) => {
+    window.open(link);
+    e.stopPropagation();
+  };
+
+  const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
+
+  const thumbnailVariants = {
+    initial: { scale: 0.9, opacity: 0 },
+    enter: { scale: 1, opacity: 1, transition },
+    exit: {
+      scale: 0.5,
+      opacity: 0,
+      transition: { duration: 1.5, ...transition }
     }
   };
 
-  const variants = {
-    initial: {
-      opacity: 0,
-      translateY: -20
-    },
-    enter: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        y: { stiffness: 1000, velocity: -100 }
-      }
-    },
-    exit: {
-      y: 50,
-      opacity: 0,
-      transition: {
-        y: { stiffness: 1000 }
-      }
-    }
+  const imageVariants = {
+    hover: { scale: 1.1 }
   };
 
   return (
-    <MotionBox variants={variants}>
-      <Box onClick={handleClick} cursor="pointer" size="lg">
+    
+        <CardTransition>
+      <Box onClick={handleClick} cursor="pointer" size="xl">
         <VStack
-          w="100%"
+          //   w="100%"
           rounded="xl"
           borderWidth="1px"
           bg={useColorModeValue("white", "gray.800")}
@@ -113,50 +110,62 @@ const RepositoryCard = (props: RepositoryCardProps) => {
           spacing={0}
         >
           <Box position="relative" w="100%">
-            <AspectRatio
-              ratio={1.85 / 1}
-              // maxW="400px"
-              w="100%"
-              borderBottomWidth="1px"
-              borderColor={useColorModeValue("gray.100", "gray.700")}
-            >
-              <Image src={cover} fallback={<Skeleton />} objectFit="cover" />
-            </AspectRatio>
-            {/* <Center
-            position="absolute"
-            top="0"
-            bottom="0"
-            left="0"
-            right="0"
-            bg="rgb(0,0,0)"
-            bg="linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 100%)"
-            transition="all 0.6s"
-            transition-timing-function="spring(1 100 10 10)"
-            opacity={isHovered ? "1" : "0"}
-          >
-            <Icon as={Play} w={12} h={12} color="white" />
-          </Center> */}
+            <MotionBox variants={thumbnailVariants}>
+              <MotionBox
+                whileHover="hover"
+                variants={imageVariants}
+                transition={transition}
+              >
+                <AspectRatio
+                  ratio={1.85 / 1}
+                  maxW="400px"
+                  w="100%"
+                  borderBottomWidth="1px"
+                  borderColor={useColorModeValue("gray.100", "gray.700")}
+                >
+                  <Image
+                    src={cover}
+                    fallback={<Skeleton />}
+                    objectFit="cover"
+                  />
+                </AspectRatio>
+              </MotionBox>
+            </MotionBox>
           </Box>
 
-          <VStack py={2} px={4} spacing={1} align="start" w="100%">
-          <Flex justifyContent={"space-between"} width="100%">
-            
-            <Text fontSize="sm" noOfLines={1} fontWeight="500">
-              {title}
-            </Text>
-            <Flex>
-                <AiOutlineStar color="teal.300" />
+          <VStack py={2} px={[2, 4]} spacing={1} align="start" w="100%">
+            <Flex justifyContent={"space-between"} width="100%">
+              <Tooltip hasArrow label="Github link" placement="top">
+                <HStack>
+                  <Icon as={FiGithub} boxSize="0.9em" mt={"1px"} />
+                  {/* <Link href={url} isExternal> */}
+                  <Text
+                    fontSize="sm"
+                    noOfLines={1}
+                    fontWeight="600"
+                    align="left"
+                    onClick={e => handleLinkClick(e, url)}
+                  >
+                    {title}
+                  </Text>
+                </HStack>
+              </Tooltip>
+              {/* </Link> */}
+              <Flex>
+                <Icon as={AiOutlineStar} boxSize="0.9em" mt={"1px"} />
                 <Box as="span" ml="1" fontSize="sm">
                   {stars}
                 </Box>
               </Flex>
-              </Flex>
+            </Flex>
             <Flex justifyContent={"space-between"} width="100%">
               <Box>
                 <HStack spacing="1">
                   {technologies.map(tech => (
                     <Tag size="sm" colorScheme={getTypeColor(tech)}>
-                      {tech}
+                      <Text fontSize={["0.55rem", "inherit", "inherit"]}>
+                        {tech}
+                      </Text>
                     </Tag>
                   ))}
                 </HStack>
@@ -197,7 +206,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
           </ModalContent>
         </Modal>
       </Box>
-    </MotionBox>
+      </CardTransition>
   );
 };
 
