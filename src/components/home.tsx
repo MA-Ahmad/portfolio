@@ -1,34 +1,17 @@
 import * as React from "react";
-import {
-  Badge,
-  Box,
-  Divider,
-  Flex,
-  Link,
-  useColorMode,
-  useColorModeValue,
-  Text,
-  Avatar,
-  Image as ChakraImage,
-  Heading
-} from "@chakra-ui/react";
+import { Flex, Avatar, Box } from "@chakra-ui/react";
 import { MotionBox, MotionFlex } from "./motion";
 import Header from "./header";
-import { FaGithub, FaTwitter } from "react-icons/fa";
 import Projects from "./projects";
-import { projectsList}  from "../data/projects-list";
+import { projectsList } from "../data/projects-list";
 import "../style/style.css";
-
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = "#ff9400";
-const PURPLE = "#ff007a";
-const TURQUOISE = "#00e0ff";
-const GREEN = "#38ff00";
 
 const Home = () => {
   return (
-    <Flex direction="column" align="center" >
+    <Flex direction="column" align="center">
       <Flex direction={["column", "column", "row"]}>
         <MotionBox
           opacity="0"
@@ -94,25 +77,6 @@ const Home = () => {
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={10} textAlign="left">
             This is my digital garden, where I write about the things I'm
             working on and share what I've learned. 😊
-            {/* <Link
-              href="https://twitter.com/dominiksumer"
-              ml={2}
-              mr={1}
-              isExternal
-              whiteSpace="nowrap"
-              _hover={{ textDecor: "none", color: "#1fa1f1" }}
-            >
-              <Box
-                display="inline-block"
-                as={FaTwitter}
-                mb="4px"
-                color="#1fa1f1"
-              />{" "}
-              <Box as="span" borderBottom="2px solid currentColor">
-                Twitter
-              </Box>
-            </Link>{" "}
-            so make sure to follow me if you&apos;re interested. 😊 */}
           </Box>
         </MotionFlex>
       </Flex>
@@ -132,7 +96,6 @@ const Home = () => {
         }}
       >
         <Projects projects={projectsList} />
-        {/* <NewsletterForm mt={16} /> */}
       </MotionBox>
     </Flex>
   );

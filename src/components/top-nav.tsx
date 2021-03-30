@@ -1,5 +1,4 @@
 import * as React from "react";
-import { ReactNode } from "react";
 import {
   Box,
   Flex,
@@ -11,32 +10,18 @@ import {
   useColorModeValue,
   Stack
 } from "@chakra-ui/react";
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink as RouterNavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
 
-const Links = [
+const links = [
   { name: "About", path: "/about" },
   { name: "Open Source", path: "/open-source" },
   { name: "Blog", path: "/blog" }
 ];
 
-// const NavLink = ({ children }: { children: ReactNode }) => (
-//   <Link
-//     px={2}
-//     py={1}
-//     rounded={"md"}
-//     _hover={{
-//       textDecoration: "none",
-//       bg: useColorModeValue("gray.200", "gray.900")
-//     }}
-//     href={"#"}
-//   >
-//     {children}
-//   </Link>
-// );
 interface NavLinkProps {
   index?: string;
   name: string;
@@ -45,13 +30,16 @@ interface NavLinkProps {
 const NavLink = (props: NavLinkProps) => {
   return (
     <Link
-      as={RouterLink}
+      as={RouterNavLink}
       px={2}
       py={1}
       rounded={"md"}
       _hover={{
         textDecoration: "none",
         bg: useColorModeValue("gray.200", "gray.900")
+      }}
+      _activeLink={{
+        color: useColorModeValue("blue.500", "blue.200")
       }}
       to={props.path}
     >
@@ -95,11 +83,8 @@ export default function TopNav() {
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              {Links.map((link, index) => (
+              {links.map((link, index) => (
                 <NavLink key={index} name={link.name} path={link.path} />
-                // <NavLink key={link} to={link.path}>
-                //   {link}
-                // </NavLink>
               ))}
             </HStack>
           </HStack>
@@ -128,9 +113,8 @@ export default function TopNav() {
             display={["inherit", "inherit", "none"]}
           >
             <Stack as={"nav"} spacing={4}>
-              {Links.map((link, index) => (
+              {links.map((link, index) => (
                 <NavLink index={index} name={link.name} path={link.path} />
-                // <NavLink key={link}>{link}</NavLink>
               ))}
             </Stack>
           </Box>

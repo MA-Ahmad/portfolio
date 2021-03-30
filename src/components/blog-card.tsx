@@ -51,7 +51,7 @@ const BlogCard: React.SFC<BlogCardProps> = ({ article }) => {
           />
         </Tooltip>
         <Heading fontSize="lg" align="left" mt={0}>
-          <Text as={Link} href={article.link}>
+          <Text as={Link} href={article.link} target="_blank">
             {article.title}
           </Text>
         </Heading>
