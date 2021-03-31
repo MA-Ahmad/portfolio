@@ -8,9 +8,11 @@ import {
   Text,
   Tag,
   Image,
+  Skeleton,
   useColorMode,
   useColorModeValue
 } from "@chakra-ui/react";
+import placeholder from "../assets/images/placeholder.png";
 import { FaGraduationCap } from "react-icons/fa";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import {
@@ -54,6 +56,7 @@ const Card = (props: CardProps) => {
               w={16}
               h={16}
               objectFit="cover"
+              fallbackSrc={placeholder}
               src={logo}
               alt={alt}
             />
