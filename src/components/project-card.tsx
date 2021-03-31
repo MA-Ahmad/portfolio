@@ -18,6 +18,7 @@ import {
 import { BsImages } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
 import { getTypeColor } from "../style/theme";
+import LazyImage from "./lazy-image";
 // import Image from "./image";
 // import { usePalette } from "react-palette";
 
@@ -26,6 +27,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   logo: string;
+  blurHash: string;
   link: string;
   technologies: string[];
 }
@@ -35,6 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   logo,
+  blurHash,
   link,
   technologies
 }) => {
@@ -64,14 +67,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         // _hover={{ transform: "translateY(-4px)", shadow: "lg" }}
         _hover={{ shadow: "lg" }}
       >
-        <Image
+        {/* <Image
           src={logo}
           size="sm"
           width={33}
           height={33}
           layout="fixed"
           rounded="md"
-        ></Image>
+        /> */}
+        
+        <LazyImage
+          src={logo}
+          blurHash={blurHash}
+          size="sm"
+          width={33}
+          height={33}
+          layout="fixed"
+          rounded="md"
+        />
         <VStack align="start" justify="flex-start">
           <VStack spacing={0} align="start">
             <motion.div layout>

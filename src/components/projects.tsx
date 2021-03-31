@@ -25,6 +25,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                 key={project.id}
                 title={project.title}
                 description={project.desc}
+                blurHash={project.blurHash}
                 logo={project.logo}
                 link={project.link}
                 technologies={project.technologies}
