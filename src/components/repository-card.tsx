@@ -29,12 +29,14 @@ import { AiOutlineStar, AiOutlineShareAlt } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { CardTransition } from "./page-transitions";
+import LazyImage from "./lazy-image";
 // import { format } from "timeago.js";
 interface RepositoryCardProps {
   key: number;
   title: string;
   description: string;
   cover: string;
+  blurHash: string;
   technologies: string[];
   url: string;
   live: string;
@@ -48,6 +50,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
     title,
     description,
     cover,
+    blurHash,
     technologies,
     url,
     live,
@@ -92,8 +95,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
   };
 
   return (
-    
-        <CardTransition>
+    <CardTransition>
       <Box onClick={handleClick} cursor="pointer" size="xl">
         <VStack
           //   w="100%"
@@ -123,10 +125,14 @@ const RepositoryCard = (props: RepositoryCardProps) => {
                   borderBottomWidth="1px"
                   borderColor={useColorModeValue("gray.100", "gray.700")}
                 >
-                  <Image
+                  {/* <Image
                     src={cover}
                     fallback={<Skeleton />}
                     objectFit="cover"
+                  /> */}
+                  <LazyImage
+                    src={cover}
+                    blurHash={blurHash}
                   />
                 </AspectRatio>
               </MotionBox>
@@ -206,7 +212,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
           </ModalContent>
         </Modal>
       </Box>
-      </CardTransition>
+    </CardTransition>
   );
 };
 

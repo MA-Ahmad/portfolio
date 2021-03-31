@@ -117,17 +117,17 @@ const About = () => {
   return (
     <PageSlideFade>
       <StaggerChildren>
-      <MotionBox>
-        <Heading>
-          <Flex alignItems="center">
-            <Header underlineColor={TURQUOISE} mt={0} mb={0}>
-              Career
-            </Header>
-            <Stack pl={3}>
-              <Box as={BsFillBriefcaseFill} size="25px" />
-            </Stack>
-          </Flex>
-        </Heading>
+        <MotionBox>
+          <Heading>
+            <Flex alignItems="center">
+              <Header underlineColor={TURQUOISE} mt={0} mb={0}>
+                Career
+              </Header>
+              <Stack pl={3}>
+                <Box as={BsFillBriefcaseFill} size="25px" />
+              </Stack>
+            </Flex>
+          </Heading>
         </MotionBox>
         <VStack spacing={4} marginBottom={6} align="left" mx={6} mt={12}>
           {companies.map((company, index) => (

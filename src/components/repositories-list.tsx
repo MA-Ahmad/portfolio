@@ -38,6 +38,7 @@ const RepositoriesList = () => {
                 title={repo.title}
                 description={repo.description}
                 cover={repo.cover}
+                blurHash={repo.blurHash}
                 technologies={repo.technologies}
                 url={repo.url}
                 live={repo.live}
