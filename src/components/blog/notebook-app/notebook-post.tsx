@@ -35,10 +35,15 @@ const NotebookPost: React.SFC<PostProps> = () => {
     <>
       <VStack mt={0} mb={6} spacing={1} align="start">
         <Heading as="h1" fontSize="3xl" lineHeight="shorter" fontWeight="bold">
-          {/* How I created Notebook app with React and CharaUi */}
           {post.title}
         </Heading>
-        <Divider orientation="horizontal" />
+        <Divider
+          orientation="horizontal"
+          opacity={1}
+          borderBottomWidth={0}
+          height={"1px"}
+          bg={"gray.200"}
+        />
       </VStack>
       <Flex
         justifyContent={"space-between"}
@@ -49,7 +54,7 @@ const NotebookPost: React.SFC<PostProps> = () => {
             {post.published}
           </Text>
           <Text fontSize="sm" fontWeight="400" color={textColor}>
-          •
+            •
           </Text>
           <Tooltip hasArrow label="Views" placement="top">
             <Flex alignItems="center">
@@ -65,7 +70,7 @@ const NotebookPost: React.SFC<PostProps> = () => {
               <Icon as={FaEye} ml={1} color={textColor} />
             </Flex>
           </Tooltip>
-          
+
           <Text fontSize="sm" fontWeight="600" color={textColor}>
             •
           </Text>
