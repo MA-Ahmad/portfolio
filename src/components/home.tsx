@@ -110,7 +110,7 @@ const Home = () => {
         <Box mt={10}>
           <Stack
             mb={10}
-            mx={[0,0,10]}
+            mx={[0, 0, 10]}
             padding={4}
             align="start"
             borderLeft="4px solid"
@@ -134,7 +134,9 @@ const Home = () => {
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="/achievements">Achievements</Link>
+                <Link as={NavLink} to="/achievements">
+                  Achievements
+                </Link>
               </ListItem>
             </UnorderedList>
           </Stack>
