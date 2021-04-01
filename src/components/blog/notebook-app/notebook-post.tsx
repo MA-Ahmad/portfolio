@@ -21,7 +21,7 @@ import {
 import { FaEye } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
-import { posts } from "../../../data/posts/posts-list";
+import { articles } from "../../../data/posts/articles";
 import { getTypeColor } from "../../../style/theme";
 import Carousel from "../carousel";
 
@@ -29,13 +29,14 @@ export interface PostProps {}
 
 const NotebookPost: React.SFC<PostProps> = () => {
   const textColor = useColorModeValue("gray.500", "gray.200");
-  const post = posts[0];
+  const post = articles[0];
 
   return (
     <>
       <VStack mt={0} mb={6} spacing={1} align="start">
         <Heading as="h1" fontSize="3xl" lineHeight="shorter" fontWeight="bold">
-          How I created Notebook app with React and CharaUi
+          {/* How I created Notebook app with React and CharaUi */}
+          {post.title}
         </Heading>
         <Divider orientation="horizontal" />
       </VStack>
@@ -106,7 +107,7 @@ const NotebookPost: React.SFC<PostProps> = () => {
             Demo
           </Button>
         </Link>
-        <Link href={post.url} isExternal>
+        <Link href={post.github_url} isExternal>
           <Button
             ml={2}
             variant="outline"

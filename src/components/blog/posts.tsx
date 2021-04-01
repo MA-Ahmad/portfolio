@@ -1,6 +1,6 @@
 import * as React from "react";
 import { VStack, Stack } from "@chakra-ui/react";
-import { articles } from "../../data/articles";
+import { articles } from "../../data/posts/articles";
 import PostCard from "./post-card";
 import { PageSlideFade, StaggerChildren } from "../page-transitions";
 import Header from "../header";

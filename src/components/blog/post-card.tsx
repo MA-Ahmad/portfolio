@@ -25,6 +25,7 @@ export interface PostCardProps {
 
 const PostCard: React.SFC<PostCardProps> = ({ article }) => {
   const textColor = useColorModeValue("gray.500", "gray.200");
+  const devIcon = useColorModeValue(dev, dev2);
 
   return (
     <CardTransition>
@@ -39,19 +40,27 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
         bg={useColorModeValue("white", "gray.800")}
         align="left"
       >
-        <Tooltip hasArrow label="Dev.to" placement="top">
-          <Image
-            src={useColorModeValue(dev, dev2)}
-            width="2rem"
-            height="2rem"
-            position="absolute"
-            color="#cbd5e0"
-            right="0.5rem"
-            top="-14px"
-          />
-        </Tooltip>
+        {article.target ? (
+          <Tooltip hasArrow label="Dev.to" placement="top">
+            <Image
+              src={devIcon}
+              width="2rem"
+              height="2rem"
+              position="absolute"
+              color="#cbd5e0"
+              right="0.5rem"
+              top="-14px"
+            />
+          </Tooltip>
+        ) : (
+          ""
+        )}
         <Heading fontSize="lg" align="left" mt={0}>
-          <Text as={Link} href={article.link} target="_blank">
+          <Text
+            as={Link}
+            href={article.link}
+            target={article.target ? "_blank" : ""}
+          >
             {article.title}
           </Text>
         </Heading>
