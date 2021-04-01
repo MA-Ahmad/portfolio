@@ -15,7 +15,8 @@ import {
   Flex,
   Image,
   Box,
-  Button
+  Button,
+  Divider
 } from "@chakra-ui/react";
 import { FaEye } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
@@ -32,7 +33,12 @@ const NotebookPost: React.SFC<PostProps> = () => {
 
   return (
     <>
-      <Header mt={0}>How I created Notebook app with React and CharaUi</Header>
+      <VStack mt={0} mb={6} spacing={1} align="start">
+        <Heading as="h1" fontSize="3xl" lineHeight="shorter" fontWeight="bold">
+          How I created Notebook app with React and CharaUi
+        </Heading>
+        <Divider orientation="horizontal" />
+      </VStack>
       <Flex
         justifyContent={"space-between"}
         flexDirection={["column", "row", "row"]}
@@ -41,7 +47,7 @@ const NotebookPost: React.SFC<PostProps> = () => {
           <Text fontSize="sm" fontWeight="400" color={textColor}>
             {post.published}
           </Text>
-          {/* <Text fontSize="sm" fontWeight="400" color={textColor}>
+          <Text fontSize="sm" fontWeight="400" color={textColor}>
           •
           </Text>
           <Tooltip hasArrow label="Views" placement="top">
@@ -58,7 +64,7 @@ const NotebookPost: React.SFC<PostProps> = () => {
               <Icon as={FaEye} ml={1} color={textColor} />
             </Flex>
           </Tooltip>
-           */}
+          
           <Text fontSize="sm" fontWeight="600" color={textColor}>
             •
           </Text>
@@ -77,7 +83,7 @@ const NotebookPost: React.SFC<PostProps> = () => {
         <HStack spacing={1} alignItems="center">
           {post.tags.map(tag => (
             <Tag
-              size="md"
+              size="sm"
               padding="0 3px"
               key={tag}
               colorScheme={getTypeColor(tag)}

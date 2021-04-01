@@ -61,6 +61,13 @@ const Achievements = () => {
         Wrote <a href="/posts">6 blog posts</a>
       </TimelineItem> */}
             <TimelineItem icon={FiPackage}>
+              Published my first post on this website{" "}
+              <AnchorLink
+                url="/blog"
+                text={"Blog"}
+              />
+            </TimelineItem>
+            <TimelineItem icon={FiPackage}>
               Published or contributed to{" "}
               <AnchorLink
                 url="/open-source"

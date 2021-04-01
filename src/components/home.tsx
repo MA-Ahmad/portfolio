@@ -1,5 +1,16 @@
 import * as React from "react";
-import { Flex, Avatar, Box } from "@chakra-ui/react";
+import {
+  Flex,
+  Avatar,
+  Box,
+  Text,
+  Badge,
+  Stack,
+  Link,
+  UnorderedList,
+  ListItem,
+  useColorModeValue
+} from "@chakra-ui/react";
 import { MotionBox, MotionFlex } from "./motion";
 import Header from "./header";
 import Projects from "./projects";
@@ -74,7 +85,7 @@ const Home = () => {
               Pakistan 🇵🇰
             </Box>
           </Box>
-          <Box as="h2" fontSize="2xl" fontWeight="400" mt={10} textAlign="left">
+          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
             This is my digital garden, where I write about the things I'm
             working on and share what I've learned. 😊
           </Box>
@@ -95,7 +106,39 @@ const Home = () => {
           }
         }}
       >
-        <Projects projects={projectsList} />
+        <Box mt={10}>
+          <Stack
+            mb={10}
+            mx={10}
+            padding={4}
+            align="start"
+            borderLeft="4px solid"
+            borderColor={"#53c8c4"}
+            color={"whatsapp"}
+            _hover={{ shadow: "lg" }}
+            backgroundColor={useColorModeValue("gray.100", "#1e2533")}
+            rounded="sm"
+            fontSize="md"
+          >
+            <Text textAlign="center" color="#53c8c4" fontWeight="bold">
+              Highlights
+            </Text>
+            <UnorderedList textAlign="left" paddingLeft={5} m={0}>
+              <ListItem>
+                <Link href="/blog/notebook-app">
+                  Created Notbook app{" "}
+                  <Badge ml="1" colorScheme="green">
+                    New
+                  </Badge>
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="/achievements">Achievements</Link>
+              </ListItem>
+            </UnorderedList>
+          </Stack>
+          <Projects projects={projectsList} />
+        </Box>
       </MotionBox>
     </Flex>
   );
