@@ -13,7 +13,7 @@ const ORANGE = "#ff9400";
 
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
-    <VStack align="start" spacing={8} mt={14}>
+    <VStack align="start" spacing={8}>
       <Header underlineColor={ORANGE} mt={0} mb={0}>
         Projects
       </Header>

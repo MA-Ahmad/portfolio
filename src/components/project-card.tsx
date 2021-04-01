@@ -23,7 +23,6 @@ import LazyImage from "./lazy-image";
 // import { usePalette } from "react-palette";
 
 interface ProjectCardProps {
-  key: number;
   title: string;
   description: string;
   logo: string;
@@ -33,7 +32,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-  key,
   title,
   description,
   logo,

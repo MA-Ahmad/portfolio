@@ -15,7 +15,7 @@ export const posts = [
     live: "https://ma-ahmad.github.io/notebook",
     published: "1 April 2021",
     readTime: "1 min read",
-    images: [img1, img2, img3, img4, img5, img6]
-    //   views: "229"
+    images: [img1, img2, img3, img4, img5, img6],
+    views: "15"
   }
 ];

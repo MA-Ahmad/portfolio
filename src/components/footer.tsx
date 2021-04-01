@@ -52,8 +52,9 @@ const Footer = () => {
       </Box> */}
       </HStack>
       <Box>
-        {siteConfig.author.accounts.map(sc => (
+        {siteConfig.author.accounts.map((sc, index) => (
           <IconButton
+          key={index}
             as={Link}
             isExternal
             href={sc.url}
