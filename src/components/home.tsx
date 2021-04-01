@@ -11,6 +11,7 @@ import {
   ListItem,
   useColorModeValue
 } from "@chakra-ui/react";
+import { Link as NavLink } from "react-router-dom";
 import { MotionBox, MotionFlex } from "./motion";
 import Header from "./header";
 import Projects from "./projects";
@@ -47,7 +48,7 @@ const Home = () => {
         </MotionBox>
         <MotionFlex
           ml={["auto", "auto", 16]}
-          m={["initial", "initial"]}
+          m={["auto", "initial"]}
           w={["90%", "85%", "80%"]}
           maxW="800px"
           opacity="0"
@@ -109,7 +110,7 @@ const Home = () => {
         <Box mt={10}>
           <Stack
             mb={10}
-            mx={10}
+            mx={[0,0,10]}
             padding={4}
             align="start"
             borderLeft="4px solid"
@@ -125,8 +126,8 @@ const Home = () => {
             </Text>
             <UnorderedList textAlign="left" paddingLeft={5} m={0}>
               <ListItem>
-                <Link href="/blog/notebook-app">
-                  Created Notbook app{" "}
+                <Link as={NavLink} to="/blog/notebook-app">
+                  How to create Notebook app with React and CharaUi?{" "}
                   <Badge ml="1" colorScheme="green">
                     New
                   </Badge>

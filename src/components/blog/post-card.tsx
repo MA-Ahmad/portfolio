@@ -12,6 +12,7 @@ import {
   Flex,
   Image
 } from "@chakra-ui/react";
+import { Link as NavLink } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { MotionBox } from "../motion";
 import { getTypeColor } from "../../style/theme";
@@ -56,13 +57,15 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
           ""
         )}
         <Heading fontSize="lg" align="left" mt={0}>
-          <Text
-            as={Link}
-            href={article.link}
-            target={article.target ? "_blank" : ""}
-          >
-            {article.title}
-          </Text>
+          {article.target ? (
+            <Text as={Link} href={article.link} target="_blank">
+              {article.title}
+            </Text>
+          ) : (
+            <Link as={NavLink} to={article.link}>
+              {article.title}
+            </Link>
+          )}
         </Heading>
         <HStack spacing={2} isInline>
           <Text fontSize="sm" fontWeight="400" color={textColor}>
