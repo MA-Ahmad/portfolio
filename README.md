@@ -1,6 +1,7 @@
 This is the source for my personal website [mahmad](https://mahmad.me).
 
 ## Built with
+- [Typescript](https://www.typescriptlang.org/)
 - [Reactjs](https://reactjs.org/)
 - [Chakra UI](https://chakra-ui.com)
 - [Framer Motion](https://www.framer.com/motion/)
