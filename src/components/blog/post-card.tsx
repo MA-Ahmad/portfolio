@@ -10,7 +10,9 @@ import {
   useColorModeValue,
   Icon,
   Flex,
-  Image
+  Image,
+  Badge,
+  Box
 } from "@chakra-ui/react";
 import { Link as NavLink } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
@@ -41,7 +43,7 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
         bg={useColorModeValue("white", "gray.800")}
         align="left"
       >
-        {article.target ? (
+        {article.external ? (
           <Tooltip hasArrow label="Dev.to" placement="top">
             <Image
               src={devIcon}
@@ -57,7 +59,7 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
           ""
         )}
         <Heading fontSize="lg" align="left" mt={0}>
-          {article.target ? (
+          {article.external ? (
             <Text as={Link} href={article.link} target="_blank">
               {article.title}
             </Text>
@@ -66,11 +68,24 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
               {article.title}
             </Link>
           )}
+          {article.isNew && (
+            <Badge
+              ml="1"
+              mb="1"
+              colorScheme="green"
+              fontSize="0.7em"
+              lineHeight={1.5}
+            >
+              New
+            </Badge>
+          )}
         </Heading>
         <HStack spacing={2} isInline>
-          <Text fontSize="sm" fontWeight="400" color={textColor}>
-            {article.published}
-          </Text>
+          <Tooltip hasArrow label="Published" placement="top">
+            <Text fontSize="sm" fontWeight="400" color={textColor}>
+              {article.published}
+            </Text>
+          </Tooltip>
           <Text fontSize="sm" fontWeight="400" color={textColor}>
             •
           </Text>

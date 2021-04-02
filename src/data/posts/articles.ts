@@ -1,4 +1,4 @@
-import { images } from './notebook-app/images'
+import { images } from "./notebook-app/images";
 
 export const articles = [
   {
@@ -7,28 +7,42 @@ export const articles = [
       "This is a notebook app which will help you to crate notes for your daily work.",
     tags: ["react", "typescript", "chakraUi"],
     github_url: "https://github.com/MA-Ahmad/notebook",
-    link: '/blog/notebook-app',
-    target: false,
+    link: "/blog/notebook-app",
+    external: false,
+    isNew: true,
     live: "https://ma-ahmad.github.io/notebook",
-    published: "1 April 2021",
+    published: "1 Apr 2021",
     readTime: "1 min read",
     images: images,
     views: "15"
-  }
-  ,
+  },
   {
     title:
-      "Create a blog app with user authentication by using React and ROR",
+      "Create a beautiful personal website with react, ChakraUi and framerMotion",
     desc:
-      "Updated blog app with user authentication.",
+      "Personal portfolio website to show your skills, experience, and articles you published.",
+    tags: ["react", "typescript", "chakraUi", "framerMotion"],
+    link:
+      "https://dev.to/m_ahmad/create-a-beautiful-personal-website-with-react-chakraui-and-framermotion-54ik",
+    github_url: "https://github.com/MA-Ahmad/portfolio-v2",
+    external: true,
+    isNew: true,
+    published: "2 Apr 2020",
+    readTime: "1 min read",
+    views: "82"
+  },
+  ,
+  {
+    title: "Create a blog app with user authentication by using React and ROR",
+    desc: "Updated blog app with user authentication.",
     tags: ["rails", "react", "chakraUi", "formik"],
     link:
       "https://dev.to/m_ahmad/create-a-blog-app-with-user-authentication-by-using-react-and-ror-38nl",
     github_url: "https://github.com/MA-Ahmad/blog-app-react-frontend",
-    target: true,
+    external: true,
     published: "9 Oct 2020",
-    readTime: '1 min read',
-    views: "229"
+    readTime: "1 min read",
+    views: "235"
   },
   {
     title:
@@ -39,10 +53,10 @@ export const articles = [
     link:
       "https://dev.to/m_ahmad/create-an-app-with-react-context-api-and-ruby-on-rails-by-using-chakraui-and-formik-40c1",
     github_url: "https://github.com/MA-Ahmad/blog-app-react-frontend",
-    target: true,
+    external: true,
     published: "16 Aug 2020",
-    readTime: '2 min read',
-    views: "341"
+    readTime: "2 min read",
+    views: "353"
   },
   {
     title: "Create ROR+React(RR) App with Tailwindcss",
@@ -52,10 +66,10 @@ export const articles = [
     link:
       "https://dev.to/m_ahmad/create-ror-react-rr-app-with-tailwindcss-3ccf",
     github_url: "https://github.com/MA-Ahmad/react_rails_blog",
-    target: true,
+    external: true,
     published: "11 Aug 2020",
-    readTime: '1 min read',
-    views: "366"
+    readTime: "1 min read",
+    views: "389"
   },
   {
     title: "Create React App with chakraUI and formik libraries",
@@ -65,10 +79,10 @@ export const articles = [
     link:
       "https://dev.to/m_ahmad/create-react-app-with-chakraui-and-formik-libraries-6fi",
     github_url: "https://github.com/MA-Ahmad/reactBlog",
-    target: true,
+    external: true,
     published: "8 Aug 2020",
-    readTime: '1 min read',
-    views: "633"
+    readTime: "1 min read",
+    views: "637"
   },
   {
     title: "Convert Video to text in Ruby",
@@ -77,9 +91,9 @@ export const articles = [
     tags: ["ruby", "ffmpeg", "cloud storage"],
     link: "https://dev.to/maahmad/convert-video-to-text-in-ruby-5145",
     github_url: "https://github.com/MA-Ahmad/Video-to-text",
-    target: true,
+    external: true,
     published: "20 Apr 2020",
-    readTime: '2 min read',
-    views: "166"
+    readTime: "2 min read",
+    views: "174"
   }
 ];
