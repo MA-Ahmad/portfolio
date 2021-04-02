@@ -50,7 +50,7 @@ const Home = () => {
         </MotionBox>
         <MotionFlex
           ml={["auto", "auto", 16]}
-          m={["auto", "initial"]}
+          m={["auto","auto", "initial"]}
           w={["90%", "85%", "80%"]}
           maxW="800px"
           opacity="0"
@@ -81,7 +81,7 @@ const Home = () => {
               Full Stack Developer,
             </Box>{" "}
             <Box as="span" whiteSpace="nowrap">
-              an open source lover and a writer&nbsp;
+              an open source lover&nbsp;
             </Box>
             from{" "}
             <Box as="span" whiteSpace="nowrap">
