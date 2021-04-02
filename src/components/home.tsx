@@ -78,7 +78,7 @@ const Home = () => {
             </Box>{" "}
             and I&apos;m a{" "}
             <Box as="span" whiteSpace="nowrap">
-              Full Stack Developer,
+              Full Stack Developer and
             </Box>{" "}
             <Box as="span" whiteSpace="nowrap">
               an open source lover&nbsp;

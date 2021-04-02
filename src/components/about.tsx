@@ -132,7 +132,7 @@ const About = () => {
             </Flex>
           </Heading>
         </MotionBox>
-        <VStack spacing={4} marginBottom={6} align="left" mx={6} mt={12}>
+        <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
           {companies.map((company, index) => (
             <MotionBox whileHover={{ y: -5 }} key={index}>
               <Card
@@ -157,7 +157,7 @@ const About = () => {
             </Stack>
           </Flex>
         </Heading>
-        <VStack spacing={4} marginBottom={6} align="left" mx={6} mt={12}>
+        <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
           {institutes.map((institute, index) => (
             <MotionBox whileHover={{ y: -5 }} key={index}>
               <Card

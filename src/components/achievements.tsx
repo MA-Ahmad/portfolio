@@ -18,28 +18,43 @@ import {
   VStack,
   Heading,
   Box,
+  Link,
   LinkProps
 } from "@chakra-ui/react";
 import { TimelineItem } from "./Timeline";
 import { PageSlideFade } from "./page-transitions";
+import { Link as NavLink } from "react-router-dom";
 import Header from "./header";
 
-interface AnchorLinkProps extends LinkProps {
+interface ExternalLinkProps extends LinkProps {
   url: string;
   linkProps?: LinkProps;
   text: string;
 }
 
-const AnchorLink: React.FC<AnchorLinkProps> = ({
+const ExternalLink: React.FC<ExternalLinkProps> = ({
   url,
   linkProps,
   text,
   ...props
 }) => {
   return (
-    <a href={url} {...linkProps} {...props}>
+    <Link href={url} {...linkProps} {...props}>
       {text}
-    </a>
+    </Link>
+  );
+};
+
+const InternalLink: React.FC<ExternalLinkProps> = ({
+  url,
+  linkProps,
+  text,
+  ...props
+}) => {
+  return (
+    <Link as={NavLink} to={url} {...linkProps} {...props}>
+      {text}
+    </Link>
   );
 };
 const Achievements = () => {
@@ -62,21 +77,20 @@ const Achievements = () => {
       </TimelineItem> */}
             <TimelineItem icon={FiPackage}>
               Published my first post on this website{" "}
-              <AnchorLink
-                url="/blog"
-                text={"Blog"}
-              />
+              <InternalLink color={"blue.200"} url="/blog" text={"Blog"} />
             </TimelineItem>
             <TimelineItem icon={FiPackage}>
               Published or contributed to{" "}
-              <AnchorLink
+              <InternalLink
+                color={"blue.200"}
                 url="/open-source"
                 text={"6 open-source repositories"}
               />
             </TimelineItem>
             <TimelineItem icon={FiBarChart2}>
               Collected 1100 post views and 10 total reactions for 5 posts on{" "}
-              <AnchorLink
+              <ExternalLink
+                color={"blue.200"}
                 url="https://dev.to/m_ahmad"
                 text={"Dev.to"}
                 target="_blank"
@@ -85,7 +99,8 @@ const Achievements = () => {
             <TimelineItem icon={FiHome} skipTrail>
               Rebuilt my portfolio website with React, ChakraUI and
               Framer-motion,{" "}
-              <AnchorLink
+              <ExternalLink
+                color={"blue.200"}
                 url="https://github.com/MA-Ahmad/portfolio-v2"
                 text={"source on Github"}
                 target="_blank"
@@ -102,7 +117,8 @@ const Achievements = () => {
             <TimelineItem icon={FiEdit2}>Wrote 5 blog posts</TimelineItem>
             <TimelineItem icon={FiPackage}>
               Published or contributed to{" "}
-              <AnchorLink
+              <ExternalLink
+                color={"blue.200"}
                 url="https://github.com/MA-Ahmad?tab=repositories"
                 text={"32 open-source repositories"}
                 target="_blank"
@@ -110,7 +126,8 @@ const Achievements = () => {
             </TimelineItem>
             <TimelineItem icon={FiBarChart2}>
               Collected 674 post views and 16 total reactions for 5 posts on{" "}
-              <AnchorLink
+              <ExternalLink
+                color={"blue.200"}
                 url="https://dev.to/m_ahmad"
                 text={"Dev.to"}
                 target="_blank"
@@ -118,7 +135,8 @@ const Achievements = () => {
             </TimelineItem>
             <TimelineItem icon={FiHome} skipTrail>
               Built my portfolio website with React and ChakraUI,{" "}
-              <AnchorLink
+              <ExternalLink
+                color={"blue.200"}
                 url="https://github.com/MA-Ahmad/portfolio"
                 text={"source on Github"}
                 target="_blank"
