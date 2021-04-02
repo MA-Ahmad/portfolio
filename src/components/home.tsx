@@ -50,7 +50,7 @@ const Home = () => {
         </MotionBox>
         <MotionFlex
           ml={["auto", "auto", 16]}
-          m={["auto","auto", "initial"]}
+          m={["auto", "initial"]}
           w={["90%", "85%", "80%"]}
           maxW="800px"
           opacity="0"
