@@ -6,7 +6,8 @@ import {
   Box,
   Text,
   useColorModeValue,
-  HStack
+  HStack,
+  Flex
 } from "@chakra-ui/react";
 import siteConfig from "../configs/site-config";
 
@@ -25,12 +26,24 @@ const Footer = () => {
       p={4}
       justifyContent="space-between"
       alignItems="center"
-      w={["90%", "85%", "80%"]}
+      w={["100%", "85%", "80%"]}
       maxW={800}
       mx="auto"
     >
-      <HStack>
-        <Text fontSize="sm" color={useColorModeValue("gray.500", "gray.200")}>
+      <Flex
+        flexDirection={["column", "column", "row"]}
+        flexFlow={["column-reverse", "column-reverse"]}
+        justifyContent={["center", "space-between"]}
+        alignItems="center"
+        w="100%"
+        ju
+      >
+        {/* <HStack> */}
+        <Text
+          textAlign="center"
+          fontSize="sm"
+          color={useColorModeValue("gray.500", "gray.200")}
+        >
           © {new Date().getFullYear()} Muhammad Ahmad{" "}
         </Text>
         {/* <Box fontSize="md" textAlign="left">
@@ -50,22 +63,23 @@ const Footer = () => {
         />
         in Pakistan{"  "}🇵🇰
       </Box> */}
-      </HStack>
-      <Box>
-        {siteConfig.author.accounts.map((sc, index) => (
-          <IconButton
-          key={index}
-            as={Link}
-            isExternal
-            href={sc.url}
-            aria-label={sc.label}
-            size="lg"
-            colorScheme={sc.type}
-            icon={sc.icon}
-            {...iconProps}
-          />
-        ))}
-      </Box>
+        {/* </HStack> */}
+        <Box textAlign="center">
+          {siteConfig.author.accounts.map((sc, index) => (
+            <IconButton
+              key={index}
+              as={Link}
+              isExternal
+              href={sc.url}
+              aria-label={sc.label}
+              size="lg"
+              colorScheme={sc.type}
+              icon={sc.icon}
+              {...iconProps}
+            />
+          ))}
+        </Box>
+      </Flex>
     </Stack>
   );
 };
