@@ -15,6 +15,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
+import UserIcon from '../../src/assets/images/user_icon.png';
 
 const links = [
   { name: "About", path: "/about" },
@@ -75,7 +76,8 @@ export default function TopNav() {
                 as={Link}
                 size={"sm"}
                 href={"/"}
-                src={"https://avatars2.githubusercontent.com/u/37842853?v=4"}
+                src={UserIcon}
+                // src={"https://avatars2.githubusercontent.com/u/37842853?v=4"}
               />
             </Box>
             <HStack
