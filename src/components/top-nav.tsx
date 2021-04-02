@@ -27,6 +27,7 @@ interface NavLinkProps {
   index?: string;
   name: string;
   path: string;
+  onClose: () => void;
 }
 const NavLink = (props: NavLinkProps) => {
   return (
@@ -42,6 +43,7 @@ const NavLink = (props: NavLinkProps) => {
       _activeLink={{
         color: useColorModeValue("blue.500", "blue.200")
       }}
+      onClick={() => props.onClose()}
       to={props.path}
     >
       {props.name}
@@ -86,7 +88,7 @@ export default function TopNav() {
               display={{ base: "none", md: "flex" }}
             >
               {links.map((link, index) => (
-                <NavLink key={index} name={link.name} path={link.path} />
+                <NavLink key={index} name={link.name} path={link.path} onClose={onClose} />
               ))}
             </HStack>
           </HStack>
@@ -116,7 +118,7 @@ export default function TopNav() {
           >
             <Stack as={"nav"} spacing={4}>
               {links.map((link, index) => (
-                <NavLink index={index} name={link.name} path={link.path} />
+                <NavLink index={index} name={link.name} path={link.path} onClose={onClose} />
               ))}
             </Stack>
           </Box>
