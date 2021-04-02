@@ -112,7 +112,7 @@ export default function TopNav() {
         {isOpen ? (
           <Box
             pb={4}
-            w={["90%", "85%", "80%"]}
+            w={["100%", "100%", "80%"]}
             maxW={800}
             display={["inherit", "inherit", "none"]}
           >
