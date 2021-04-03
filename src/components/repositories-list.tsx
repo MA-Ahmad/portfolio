@@ -26,7 +26,7 @@ const RepositoriesList = () => {
           textAlign="left"
         >
           This page lists some of the open source repositories I have published
-          or contribute to.
+          or contributed to.
         </Text>
       </VStack>
       <StaggerChildren>
