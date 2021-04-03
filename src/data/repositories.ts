@@ -30,14 +30,15 @@ export const repositories = [
     stars: "6"
   },
   {
-    title: "Portfolio",
-    description: "Personal portfolio app to show my skills and experience.",
-    cover: portfolio,
-    technologies: ["react", "chakraUi"],
-    url: "https://github.com/MA-Ahmad/portfolio",
-    live: "https://mahmad.me/",
-    blurHash: "L6S?DV9F-;~p%2R*IUM|adM|M{t7",
-    stars: "2"
+    title: "Notebook",
+    description:
+      "This is a notebook app which will help you to crate notes for your daily work.",
+    cover: notebook,
+    technologies: ["react", "typescript", "chakraUI"],
+    url: "https://github.com/MA-Ahmad/notebook",
+    live: "https://ma-ahmad.github.io/notebook",
+    blurHash: "L4S~x5xb~q$*~WR6MykCx^Vt4TtP",
+    stars: "4"
   },
   {
     title: "Portfolio-v2",
@@ -47,6 +48,16 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/portfolio-v2",
     live: "https://ma-ahmad.github.io/portfolio-v2",
     blurHash: "L8R:NY9Ft7t8RjRie.j[~WtRR+xu",
+    stars: "3"
+  },
+  {
+    title: "Portfolio",
+    description: "Personal portfolio app to show my skills and experience.",
+    cover: portfolio,
+    technologies: ["react", "chakraUi"],
+    url: "https://github.com/MA-Ahmad/portfolio",
+    live: "https://mahmad.me/",
+    blurHash: "L6S?DV9F-;~p%2R*IUM|adM|M{t7",
     stars: "2"
   },
   {
@@ -59,17 +70,7 @@ export const repositories = [
     blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
     stars: "2"
   },
-  {
-    title: "Notebook",
-    description:
-      "This is a notebook app which will help you to crate notes for your daily work.",
-    cover: notebook,
-    technologies: ["react", "typescript", "chakraUI"],
-    url: "https://github.com/MA-Ahmad/notebook",
-    live: "https://ma-ahmad.github.io/notebook",
-    blurHash: "L4S~x5xb~q$*~WR6MykCx^Vt4TtP",
-    stars: "2"
-  },
+
   {
     title: "Blogify",
     description: "A simple react+rails(RR) CRUD app with tailwindcss.",
