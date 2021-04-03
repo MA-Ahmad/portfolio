@@ -56,7 +56,13 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
             />
           </Tooltip>
         ) : (
-          ""
+          <Tooltip hasArrow label="mahmad.me" placement="top">
+            <Box position="absolute" color="#cbd5e0" right="0.5rem" top="-14px">
+              <Badge ml="1" variant="solid" colorScheme="blackAlpha">
+                Website
+              </Badge>
+            </Box>
+          </Tooltip>
         )}
         <Heading fontSize="lg" align="left" mt={0}>
           {article.external ? (
