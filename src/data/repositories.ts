@@ -38,7 +38,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/notebook",
     live: "https://ma-ahmad.github.io/notebook",
     blurHash: "L4S~x5xb~q$*~WR6MykCx^Vt4TtP",
-    stars: "4"
+    stars: "6"
   },
   {
     title: "Portfolio-v2",
@@ -48,7 +48,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/portfolio-v2",
     live: "https://ma-ahmad.github.io/portfolio-v2",
     blurHash: "L8R:NY9Ft7t8RjRie.j[~WtRR+xu",
-    stars: "3"
+    stars: "4"
   },
   {
     title: "Portfolio",
