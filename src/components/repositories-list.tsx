@@ -9,7 +9,6 @@ import {
   Box
 } from "@chakra-ui/react";
 import { PageSlideFade, StaggerChildren } from "./page-transitions";
-import { repositories } from "../data/repositories";
 import RepositoryCard from "./repository-card";
 import Header from "./header";
 import { MotionBox } from "./motion";
