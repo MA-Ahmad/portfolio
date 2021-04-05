@@ -169,3 +169,17 @@ export const getTypeColor = type => {
     return "teal";
   }
 };
+
+export const getLanguageColor = type => {
+  if (type === "Rails" || type === "Ruby") {
+    return "red";
+  } else if (type === "React") {
+    return "cyan";
+  } else if (type === "JavaScript") {
+    return "yellow";
+  } else if (type === "TypeScript") {
+    return "blue";
+  } else if (type === "CSS") {
+    return "teal";
+  }
+};
