@@ -78,9 +78,13 @@ const RepositoryCard = (props: RepositoryCardProps) => {
       >
         <VStack overflow="hidden" align="start" spacing={1}>
           <VStack spacing={1} align="start" w="100%">
-            <Flex justifyContent={"space-between"} width="100%">
+            <Flex
+              justifyContent={"space-between"}
+              width="100%"
+              onClick={e => handleLinkClick(e, url)}
+            >
               <Tooltip hasArrow label="Github link" placement="top">
-                <HStack cursor={'pointer'}>
+                <HStack cursor={"pointer"}>
                   <Icon as={FiGithub} boxSize="0.9em" mt={"1px"} />
                   <Text
                     fontSize="sm"
@@ -88,20 +92,19 @@ const RepositoryCard = (props: RepositoryCardProps) => {
                     fontWeight="600"
                     align="left"
                     color={"blue.500"}
-                    onClick={e => handleLinkClick(e, url)}
                   >
                     {title}
                   </Text>
                 </HStack>
               </Tooltip>
-              <HStack>
-                <Box>
+              <HStack cursor={"pointer"} onClick={e => handleLinkClick(e, url)}>
+                <Box _hover={{ color: "blue.500" }}>
                   <Icon as={BiGitRepoForked} boxSize="0.9em" mt={"1px"} />
                   <Box as="span" ml="1" fontSize="sm">
                     {forks_count}
                   </Box>
                 </Box>
-                <Box>
+                <Box _hover={{ color: "blue.500" }}>
                   <Icon as={BiStar} boxSize="0.9em" mt={"1px"} />
                   <Box as="span" ml="1" fontSize="sm">
                     {stargazers_count}
