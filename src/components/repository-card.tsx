@@ -66,7 +66,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
         size="xl"
         py={2}
         px={[2, 4]}
-        mt={1}
+        mt={2}
         rounded="xl"
         borderWidth="1px"
         bg={useColorModeValue("white", "gray.800")}
