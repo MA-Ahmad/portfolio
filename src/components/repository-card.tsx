@@ -63,10 +63,10 @@ const RepositoryCard = (props: RepositoryCardProps) => {
   return (
     <MotionBox whileHover={{ y: -5 }}>
       <Box
-        cursor="pointer"
         size="xl"
         py={2}
         px={[2, 4]}
+        mt={1}
         rounded="xl"
         borderWidth="1px"
         bg={useColorModeValue("white", "gray.800")}
@@ -80,7 +80,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
           <VStack spacing={1} align="start" w="100%">
             <Flex justifyContent={"space-between"} width="100%">
               <Tooltip hasArrow label="Github link" placement="top">
-                <HStack>
+                <HStack cursor={'pointer'}>
                   <Icon as={FiGithub} boxSize="0.9em" mt={"1px"} />
                   <Text
                     fontSize="sm"

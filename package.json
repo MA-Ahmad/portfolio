@@ -25,6 +25,7 @@
     "react-progressive-image": "^0.6.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-stack-grid": "^0.7.1",
     "typescript": "^3.9.5",
     "use-http": "^1.0.19",
     "use-sound": "^2.0.1",

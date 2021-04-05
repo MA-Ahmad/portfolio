@@ -6,10 +6,13 @@ import {
   Text,
   useColorModeValue,
   SimpleGrid,
-  Box
+  Box,
+  useBoolean,
+  useMediaQuery
 } from "@chakra-ui/react";
 import { PageSlideFade, StaggerChildren } from "./page-transitions";
 import RepositoryCard from "./repository-card";
+import StackGrid from "react-stack-grid";
 import Header from "./header";
 import { MotionBox } from "./motion";
 import CardSkeleton from "./card-skeleton";
@@ -17,10 +20,21 @@ import CardSkeleton from "./card-skeleton";
 const TURQUOISE = "#06b6d4";
 
 const RepositoriesList = () => {
-  const { get, loading, error, data } = useFetch(
-    "https://api.github.com"
-  );
+  const { get, loading, error, data } = useFetch("https://api.github.com");
   const [repos, setRepos] = useState([]);
+  const [isLargerThan720] = useMediaQuery("(min-width: 720px)");
+  const [isLargerThan982] = useMediaQuery("(min-width: 982px)");
+
+  let columnWidth = 390;
+  if (isLargerThan982) {
+    columnWidth = 390;
+  } else {
+    if (isLargerThan720) {
+      columnWidth = 300;
+    } else {
+      columnWidth = "100%";
+    }
+  }
 
   useEffect(() => {
     get("/users/MA-Ahmad/repos").then(res => {
@@ -44,22 +58,27 @@ const RepositoriesList = () => {
           or contributed to.
         </Text>
       </VStack>
-      <StaggerChildren>
-        <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={12}>
-          {loading ? <CardSkeleton /> : repos?.map((repo, index) => (
-            <RepositoryCard
-              title={repo.name}
-              description={repo.description}
-              language={repo.language}
-              url={repo.svn_url}
-              created_at={repo.created_at}
-              stargazers_count={repo.stargazers_count}
-              forks_count={repo.forks_count}
-            />
-          ))}
-          
+      {loading ? (
+        <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={6}>
+          <CardSkeleton />
         </SimpleGrid>
-      </StaggerChildren>
+      ) : (
+        <Box mt={6}>
+          <StackGrid columnWidth={columnWidth}>
+            {repos?.map((repo, index) => (
+              <RepositoryCard
+                title={repo.name}
+                description={repo.description}
+                language={repo.language}
+                url={repo.svn_url}
+                created_at={repo.created_at}
+                stargazers_count={repo.stargazers_count}
+                forks_count={repo.forks_count}
+              />
+            ))}
+          </StackGrid>
+        </Box>
+      )}
     </PageSlideFade>
   );
 };

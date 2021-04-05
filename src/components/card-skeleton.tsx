@@ -11,7 +11,7 @@ import {
 const CardSkeleton = () => {
   const bgColor = useColorModeValue("white", "gray.900");
   const cards:number[] = [1, 2, 3, 4, 5, 6, 7, 8]
-  
+
   return (
     <>
       {cards.map(id => {
@@ -23,10 +23,6 @@ const CardSkeleton = () => {
             rounded="xl"
             borderWidth="1px"
             bg={bgColor}
-            _hover={{
-              shadow: "lg",
-              textDecoration: "none"
-            }}
           >
             <Stack isInline justifyContent="space-between" py={2} px={[2, 3]}>
               <Box width="100%">
