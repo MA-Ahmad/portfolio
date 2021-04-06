@@ -59,11 +59,11 @@ const RepositoriesList = () => {
         </Text>
       </VStack>
       {loading ? (
-        <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={6}>
+        <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={4}>
           <CardSkeleton />
         </SimpleGrid>
       ) : (
-        <Box mt={6}>
+        <Box mt={4}>
           <StackGrid columnWidth={columnWidth}>
             {repos?.map((repo, index) => (
               <RepositoryCard
