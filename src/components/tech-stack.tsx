@@ -16,7 +16,9 @@ import {
 } from "@chakra-ui/react";
 import { PageSlideFade } from "./page-transitions";
 import Section from "./section";
-import { AiTwotoneThunderbolt, AiOutlineMenu } from "react-icons/ai";
+import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
+import { BiDesktop } from "react-icons/bi";
+import { GiSpiderWeb } from "react-icons/gi";
 import SkillCard from "./skill-card";
 import { skills } from "../data/data";
 import Header from "./header";
@@ -49,7 +51,7 @@ const TechStack = () => {
               textAlign="center"
             >
               A list of my favorite tools and technologies that I use on a
-              regular basis and that I would recommend to try.
+              regular basis.
             </Text>
           </VStack>
         </Section>
@@ -89,7 +91,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("development")}
               >
                 <HStack spacing={1}>
-                  <Icon as={AiTwotoneThunderbolt} weight="fill" />
+                  <Icon as={BiDesktop} weight="fill" />
                   <Text>Web Development</Text>
                 </HStack>
               </Tab>
@@ -105,7 +107,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("design")}
               >
                 <HStack spacing={1}>
-                  <Icon as={AiTwotoneThunderbolt} weight="fill" />
+                  <Icon as={GiSpiderWeb} weight="fill" />
                   <Text>Web Design</Text>
                 </HStack>
               </Tab>
@@ -121,7 +123,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("devops")}
               >
                 <HStack spacing={1}>
-                  <Icon as={AiTwotoneThunderbolt} weight="fill" />
+                  <Icon as={AiOutlineCloudServer} weight="fill" />
                   <Text>Devops</Text>
                 </HStack>
               </Tab>
