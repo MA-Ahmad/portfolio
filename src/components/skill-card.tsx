@@ -4,20 +4,18 @@ import {
   VStack,
   Text,
   useColorModeValue,
-  Tag,
-  TagLabel,
-  TagRightIcon,
   Box,
-  AspectRatio,
   Link,
   Image
 } from "@chakra-ui/react";
 import { usePalette } from "react-palette";
+import { MotionBox } from "./motion";
 
 const SkillCard = ({ name, image, link, description }) => {
   const { data, loading, error } = usePalette(image);
 
   return (
+      <MotionBox whileHover={{ y: -5 }}>
     <Link href={link} isExternal>
       <HStack
         p={4}
@@ -29,9 +27,7 @@ const SkillCard = ({ name, image, link, description }) => {
         textAlign="left"
         align="start"
         spacing={4}
-        transition="all 0.25s"
-        transition-timing-function="spring(1 100 10 10)"
-        _hover={{ transform: "translateY(-4px)", shadow: "sm" }}
+        _hover={{shadow: 'md'}}
       >
         <Box
           rounded="lg"
@@ -95,6 +91,7 @@ const SkillCard = ({ name, image, link, description }) => {
         </VStack>
       </HStack>
     </Link>
+  </MotionBox>
   );
 };
 
