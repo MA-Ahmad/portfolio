@@ -4,23 +4,41 @@ import {
   Flex,
   Avatar,
   HStack,
+  Button,
+  VStack,
+  Text,
   Link,
   IconButton,
   useDisclosure,
   useColorModeValue,
-  Stack
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Stack,
+  Icon
 } from "@chakra-ui/react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
-import UserIcon from '../../src/assets/images/user_icon.png';
+import UserIcon from "../../src/assets/images/user_icon.png";
+import { AiTwotoneThunderbolt } from "react-icons/ai";
+import { BiChevronDown, BiBookBookmark } from "react-icons/bi";
+import { BsBook } from "react-icons/bs";
 
-const links = [
+const webLinks = [
+  { name: "About", path: "/about" },
+  // { name: "Open Source", path: "/open-source" },
+  { name: "Blog", path: "/blog" }
+];
+
+const mobileLinks = [
   { name: "About", path: "/about" },
   { name: "Open Source", path: "/open-source" },
-  { name: "Blog", path: "/blog" }
+  { name: "Blog", path: "/blog" },
+  { name: "Tech Stack", path: "/tech-stack" }
 ];
 
 interface NavLinkProps {
@@ -29,6 +47,7 @@ interface NavLinkProps {
   path: string;
   onClose: () => void;
 }
+
 const NavLink = (props: NavLinkProps) => {
   return (
     <Link
@@ -53,6 +72,11 @@ const NavLink = (props: NavLinkProps) => {
 
 export default function TopNav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const menuProps = {
+    bg: useColorModeValue("gray.200", "gray.900"),
+    color: useColorModeValue("blue.500", "blue.200")
+  };
 
   return (
     <>
@@ -87,9 +111,58 @@ export default function TopNav() {
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              {links.map((link, index) => (
-                <NavLink key={index} name={link.name} path={link.path} onClose={onClose} />
+              {webLinks.map((link, index) => (
+                <NavLink
+                  key={index}
+                  name={link.name}
+                  path={link.path}
+                  onClose={onClose}
+                />
               ))}
+              <Menu isLazy>
+                <MenuButton
+                  as={Button}
+                  variant="ghost"
+                  size="sm"
+                  px={2}
+                  py={1.5}
+                  fontSize={"1em"}
+                  rounded={"md"}
+                  height={"auto "}
+                  _hover={menuProps}
+                  _expanded={menuProps}
+                  _focus={{ boxShadow: "outline" }}
+                  rightIcon={<BiChevronDown size={18} />}
+                >
+                  Links
+                </MenuButton>
+                <MenuList>
+                  <Link as={RouterNavLink} to="/tech-stack">
+                    <MenuItem>
+                      <HStack>
+                        <Icon
+                          as={AiTwotoneThunderbolt}
+                          size={18}
+                          color={useColorModeValue("blue.500", "blue.200")}
+                        />
+                        <Text>Tech Stack</Text>
+                      </HStack>
+                    </MenuItem>
+                  </Link>
+                  <Link as={RouterNavLink} to="/open-source">
+                    <MenuItem>
+                      <HStack>
+                        <Icon
+                          as={BsBook}
+                          size={18}
+                          color={useColorModeValue("blue.500", "blue.200")}
+                        />
+                        <Text>Open Source</Text>
+                      </HStack>
+                    </MenuItem>
+                  </Link>
+                </MenuList>
+              </Menu>
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
@@ -117,8 +190,13 @@ export default function TopNav() {
             display={["inherit", "inherit", "none"]}
           >
             <Stack as={"nav"} spacing={4}>
-              {links.map((link, index) => (
-                <NavLink index={index} name={link.name} path={link.path} onClose={onClose} />
+              {mobileLinks.map((link, index) => (
+                <NavLink
+                  index={index}
+                  name={link.name}
+                  path={link.path}
+                  onClose={onClose}
+                />
               ))}
             </Stack>
           </Box>
