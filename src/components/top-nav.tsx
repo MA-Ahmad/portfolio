@@ -25,12 +25,12 @@ import { FaGithub } from "react-icons/fa";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
 import UserIcon from "../../src/assets/images/user_icon.png";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
-import { BiChevronDown, BiBookBookmark } from "react-icons/bi";
+import { BiChevronDown } from "react-icons/bi";
+import { BsCheckCircle } from "react-icons/bs";
 import { BsBook } from "react-icons/bs";
 
 const webLinks = [
   { name: "About", path: "/about" },
-  // { name: "Open Source", path: "/open-source" },
   { name: "Blog", path: "/blog" }
 ];
 
@@ -158,6 +158,18 @@ export default function TopNav() {
                           color={useColorModeValue("blue.500", "blue.200")}
                         />
                         <Text>Open Source</Text>
+                      </HStack>
+                    </MenuItem>
+                  </Link>
+                  <Link as={RouterNavLink} to="/achievements">
+                    <MenuItem>
+                      <HStack>
+                        <Icon
+                          as={BsCheckCircle}
+                          size={18}
+                          color={useColorModeValue("blue.500", "blue.200")}
+                        />
+                        <Text>Achievements</Text>
                       </HStack>
                     </MenuItem>
                   </Link>
