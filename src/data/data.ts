@@ -9,6 +9,7 @@ import grammarly from "../assets/images/skills/grammarly.png";
 import ruby from "../assets/images/skills/ruby.png";
 import rails from "../assets/images/skills/rails.png";
 import javascript from "../assets/images/skills/javascript.png";
+import typescript from "../assets/images/skills/typescript.png";
 import html5 from "../assets/images/skills/html-5.png";
 import css3 from "../assets/images/skills/css3.png";
 import python from "../assets/images/skills/python.png";
@@ -19,6 +20,7 @@ import mysql from "../assets/images/skills/mysql.png";
 import heroku from "../assets/images/skills/heroku.png";
 import docean from "../assets/images/skills/digital-ocean.png";
 import aws from "../assets/images/skills/aws.png";
+import nginx from "../assets/images/skills/nginx.png";
 
 export const companies = [
   {
@@ -62,10 +64,9 @@ export const institutes = [
     role: "Bachelor's Degree in Computer Science",
     skills: ["project management", "web development", "data structures"],
     period: "2013 - 2017",
-    logo: UniLogo,
+    logo: UniLogo
   }
 ];
-
 
 export const skills = [
   {
@@ -95,6 +96,13 @@ export const skills = [
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     type: "development",
     image: javascript
+  },
+  {
+    name: "Typescript",
+    description: "Web development",
+    link: "https://www.typescriptlang.org/",
+    type: "development",
+    image: typescript
   },
   {
     name: "Html5",
@@ -158,6 +166,13 @@ export const skills = [
     link: "https://www.digitalocean.com/",
     type: "devops",
     image: docean
+  },
+  {
+    name: "Nginx",
+    description: "Web server",
+    link: "https://www.nginx.com/",
+    type: "devops",
+    image: nginx
   },
   {
     name: "Visual Studio Code",
