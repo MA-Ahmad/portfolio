@@ -98,12 +98,14 @@ const RepositoryCard = (props: RepositoryCardProps) => {
                 </HStack>
               </Tooltip>
               <HStack cursor={"pointer"} onClick={e => handleLinkClick(e, url)}>
-                <Box _hover={{ color: "blue.500" }}>
-                  <Icon as={BiGitRepoForked} boxSize="0.9em" mt={"1px"} />
-                  <Box as="span" ml="1" fontSize="sm">
-                    {forks_count}
+                {forks_count && (
+                  <Box _hover={{ color: "blue.500" }}>
+                    <Icon as={BiGitRepoForked} boxSize="0.9em" mt={"1px"} />
+                    <Box as="span" ml="1" fontSize="sm">
+                      {forks_count}
+                    </Box>
                   </Box>
-                </Box>
+                )}
                 <Box _hover={{ color: "blue.500" }}>
                   <Icon as={BiStar} boxSize="0.9em" mt={"1px"} />
                   <Box as="span" ml="1" fontSize="sm">
