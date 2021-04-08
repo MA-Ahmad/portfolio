@@ -2,6 +2,20 @@ import { images } from "./notebook-app/images";
 
 export const articles = [
   {
+    title: "Built Portfolio website with React and ChakraUi",
+    desc:
+      "Different portfolio templates to show your skills, experience, articles etc",
+    tags: ["react", "typescript", "chakraUi", "framerMotion"],
+    github_url: "https://github.com/MA-Ahmad/portfolio",
+    link:
+      "https://dev.to/m_ahmad/portfolio-website-template-built-with-react-and-chakraui-15ok",
+    external: true,
+    live: "https://github.com/MA-Ahmad/portfolio",
+    published: "3 Apr 2021",
+    readTime: "1 min read",
+    views: "1063"
+  },
+  {
     title: "Create a Notebook app with React, CharaUi, and framerMotion",
     desc:
       "This is a notebook app which will help you to crate notes for your daily work.",
@@ -10,12 +24,11 @@ export const articles = [
     link:
       "https://dev.to/m_ahmad/create-a-notebook-app-with-react-charaui-and-framermotion-dej",
     external: true,
-    isNew: true,
     live: "https://ma-ahmad.github.io/notebook",
     published: "2 Apr 2021",
     readTime: "1 min read",
     images: images,
-    views: "321"
+    views: "2k"
   },
   {
     title:
@@ -27,10 +40,9 @@ export const articles = [
       "https://dev.to/m_ahmad/create-a-beautiful-personal-website-with-react-chakraui-and-framermotion-54ik",
     github_url: "https://github.com/MA-Ahmad/portfolio-v2",
     external: true,
-    isNew: true,
     published: "2 Apr 2020",
     readTime: "1 min read",
-    views: "139"
+    views: "176"
   },
   {
     title: "How to create Notebook app with React and CharaUi?",
@@ -40,7 +52,6 @@ export const articles = [
     github_url: "https://github.com/MA-Ahmad/notebook",
     link: "/blog/notebook-app",
     external: false,
-    isNew: true,
     live: "https://ma-ahmad.github.io/notebook",
     published: "1 Apr 2021",
     readTime: "1 min read",
