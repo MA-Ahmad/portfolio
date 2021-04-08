@@ -42,11 +42,11 @@ const Home = () => {
           m="auto"
           mb={[16, 16, "auto"]}
         >
-            <Avatar
-              size={"2xl"}
-              src={UserIcon}
-              // src={"https://avatars2.githubusercontent.com/u/37842853?v=4"}
-            />
+          <Avatar
+            size={"2xl"}
+            src={UserIcon}
+            // src={"https://avatars2.githubusercontent.com/u/37842853?v=4"}
+          />
         </MotionBox>
         <MotionFlex
           ml={["auto", "auto", 16]}
@@ -127,6 +127,14 @@ const Home = () => {
               Highlights
             </Text>
             <UnorderedList textAlign="left" paddingLeft={5} m={0}>
+              <ListItem>
+                <Link as={NavLink} to="/tech-stack">
+                  Tech Stack
+                  <Badge ml="1" colorScheme="green">
+                    New
+                  </Badge>
+                </Link>
+              </ListItem>
               <ListItem>
                 <Link as={NavLink} to="/blog/notebook-app">
                   How to create Notebook app with React and CharaUi?{" "}
