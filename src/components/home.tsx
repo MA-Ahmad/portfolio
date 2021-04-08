@@ -138,9 +138,6 @@ const Home = () => {
               <ListItem>
                 <Link as={NavLink} to="/blog/notebook-app">
                   How to create Notebook app with React and CharaUi?{" "}
-                  <Badge ml="1" colorScheme="green">
-                    New
-                  </Badge>
                 </Link>
               </ListItem>
               <ListItem>
