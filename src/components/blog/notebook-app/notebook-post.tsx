@@ -29,7 +29,7 @@ export interface PostProps {}
 
 const NotebookPost: React.SFC<PostProps> = () => {
   const textColor = useColorModeValue("gray.500", "gray.200");
-  const post = articles[0];
+  const post = articles[3];
 
   return (
     <>
