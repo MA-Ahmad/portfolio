@@ -10,6 +10,7 @@ export const articles = [
     link:
       "https://dev.to/m_ahmad/portfolio-website-template-built-with-react-and-chakraui-15ok",
     external: true,
+    isNew: true,
     live: "https://github.com/MA-Ahmad/portfolio",
     published: "3 Apr 2021",
     readTime: "1 min read",
@@ -56,7 +57,7 @@ export const articles = [
     published: "1 Apr 2021",
     readTime: "1 min read",
     images: images,
-    views: "25"
+    views: "50"
   },
   {
     title: "Create a blog app with user authentication by using React and ROR",
