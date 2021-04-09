@@ -31,7 +31,7 @@ const MyStory = () => {
             maxW="lg"
             textAlign="center"
           >
-            My journey starts from a little town.
+            This page tells you my story in timeline shape.
           </Text>
         </VStack>
       </Section>
