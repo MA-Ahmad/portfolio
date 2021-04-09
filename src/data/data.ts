@@ -59,12 +59,22 @@ export const companies = [
 
 export const institutes = [
   {
+    short_title: 'FAST - NUCES',
     title: "National University of Computer and Emerging Sciences",
     alt: "Nuces image",
     role: "Bachelor's Degree in Computer Science",
     skills: ["project management", "web development", "data structures"],
     period: "2013 - 2017",
     logo: UniLogo
+  },
+  {
+    short_title: 'Govt Degree College',
+    title: "Govt Degree College",
+    alt: "college image",
+    role: "FSC",
+    skills: ['Mathematic', 'Chemistry', 'Physics'],
+    period: "2011 - 2013",
+    logo: ''
   }
 ];
 
