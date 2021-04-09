@@ -139,7 +139,7 @@ export default function TopNav() {
                 >
                   Links
                 </MenuButton>
-                <MenuList>
+                <MenuList zIndex={5}>
                   <Link as={RouterNavLink} to="/tech-stack">
                     <MenuItem>
                       <HStack>
