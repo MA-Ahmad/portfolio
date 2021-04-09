@@ -38,7 +38,9 @@ const mobileLinks = [
   { name: "About", path: "/about" },
   { name: "Open Source", path: "/open-source" },
   { name: "Blog", path: "/blog" },
-  { name: "Tech Stack", path: "/tech-stack" }
+  { name: "Tech Stack", path: "/tech-stack" },
+  { name: "My Story", path: "/story-timeline" }
+  
 ];
 
 interface NavLinkProps {
@@ -158,6 +160,18 @@ export default function TopNav() {
                           color={useColorModeValue("blue.500", "blue.200")}
                         />
                         <Text>Open Source</Text>
+                      </HStack>
+                    </MenuItem>
+                  </Link>
+                  <Link as={RouterNavLink} to="/story-timeline">
+                    <MenuItem>
+                      <HStack>
+                        <Icon
+                          as={BsCheckCircle}
+                          size={18}
+                          color={useColorModeValue("blue.500", "blue.200")}
+                        />
+                        <Text>My Story</Text>
                       </HStack>
                     </MenuItem>
                   </Link>
