@@ -127,6 +127,14 @@ const Home = () => {
               Highlights
             </Text>
             <UnorderedList textAlign="left" paddingLeft={5} m={0}>
+            <ListItem>
+                <Link as={NavLink} to="/story-timeline">
+                  Story page
+                  <Badge ml="1" colorScheme="green">
+                    New
+                  </Badge>
+                </Link>
+              </ListItem>
               <ListItem>
                 <Link as={NavLink} to="/tech-stack">
                   Tech Stack
