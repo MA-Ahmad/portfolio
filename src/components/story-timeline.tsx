@@ -5,12 +5,10 @@ import {
   Circle,
   Flex,
   useColorModeValue,
-  Button,
   Popover,
   PopoverTrigger,
   PopoverCloseButton,
   PopoverArrow,
-  PopoverHeader,
   PopoverContent,
   PopoverBody
 } from "@chakra-ui/react";
@@ -36,24 +34,20 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
   const [isOpen, setIsOpen] = React.useState(true);
   const open = () => setIsOpen(!isOpen);
   const close = () => setIsOpen(false);
-
   const color = useColorModeValue("gray.700", "gray.500");
+  let place = index % 2 === 0 ? "right" : "left";
+
   return (
     <Flex minH={20} {...props}>
-      <Flex
-        flexDir="column"
-        alignItems="center"
-        minHeight={"8rem"}
-        mr={4}
-        // pos="relative"
-      >
-        {/* <Box position="relative" > */}
+      <Flex flexDir="column" alignItems={"center"} minHeight={"8rem"} mr={4}>
         <Popover
           returnFocusOnClose={false}
           isOpen={isOpen}
           onClose={close}
-          placement={index % 2 === 0 ? "right" : "left"}
+          placement={place}
           closeOnBlur={false}
+          // variant="responsive"
+          width={["9.3rem", "13rem", "15rem", "100%"]}
         >
           <PopoverTrigger>
             <Box onClick={open} position="relative">
@@ -86,9 +80,9 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
               )}
             </Box>
           </PopoverTrigger>
-          <Box width={"18rem"} fontSize={15}>
+          <Box fontSize={15}>
             {!year && (
-              <PopoverContent padding={1}>
+              <PopoverContent padding={["0.2rem", "0.2rem", "0.7rem"]}>
                 <PopoverArrow bg="pink.500" />
                 {/* <PopoverCloseButton /> */}
                 <PopoverBody>
@@ -98,7 +92,6 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
             )}
           </Box>
         </Popover>
-        {/* </Box> */}
         {!skipTrail && <Box w="1px" flex={1} bg={color} />}
       </Flex>
     </Flex>
