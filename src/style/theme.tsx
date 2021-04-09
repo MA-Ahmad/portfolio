@@ -41,6 +41,27 @@ export const theme = extendTheme({
     //     fontWeight: "500",
     //   }),
     // },
+    // Popover: {
+    //   variants: {
+    //     responsive: {
+    //       popper: {
+    //         maxWidth: 'unset',
+    //         width: 'unset'
+    //       }
+    //     }
+    //   }
+    // },
+    Popover: {
+      parts: ['popper'],
+      baseStyle: props => ({
+        popper: {
+          zIndex: 10,
+          maxW: 'xs',
+          // maxW: props.width ? props.width : 'xs',
+          w: props.width,
+        },
+      }),
+    },
     Button: {
       baseStyle: {
         fontWeight: "500",
