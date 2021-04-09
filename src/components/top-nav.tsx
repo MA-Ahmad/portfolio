@@ -27,6 +27,7 @@ import UserIcon from "../../src/assets/images/user_icon.png";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 import { BsCheckCircle } from "react-icons/bs";
+import { MdTimeline } from "react-icons/md";
 import { BsBook } from "react-icons/bs";
 
 const webLinks = [
@@ -167,7 +168,7 @@ export default function TopNav() {
                     <MenuItem>
                       <HStack>
                         <Icon
-                          as={BsCheckCircle}
+                          as={MdTimeline}
                           size={18}
                           color={useColorModeValue("blue.500", "blue.200")}
                         />
