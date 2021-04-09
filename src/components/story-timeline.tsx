@@ -34,7 +34,7 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
   const [isOpen, setIsOpen] = React.useState(true);
   const open = () => setIsOpen(!isOpen);
   const close = () => setIsOpen(false);
-  const color = useColorModeValue("gray.700", "gray.500");
+  const color = useColorModeValue("gray.700", "gray.200");
   let place = index % 2 === 0 ? "right" : "left";
 
   return (
