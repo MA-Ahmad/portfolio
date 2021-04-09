@@ -16,27 +16,31 @@ import placeholder from "../assets/images/placeholder.png";
 import { companies, institutes } from "../data/data";
 import Header from "./header";
 import Section from "./section";
+import { PageSlideFade } from "./page-transitions";
 
 const MyStory = () => {
   return (
     <VStack>
       <Section mb={14}>
-        <VStack>
-          <Header mt={0} mb={1}>
-            Developer Story
-          </Header>
-          <Text
-            fontSize={"xl"}
-            color={useColorModeValue("gray.500", "gray.200")}
-            maxW="lg"
-            textAlign="center"
-          >
-            This page tells you my story in timeline shape.
-          </Text>
-        </VStack>
+        <PageSlideFade>
+          <VStack>
+            <Header mt={0} mb={1}>
+              Developer Story
+            </Header>
+            {/* <Text
+              fontSize={"xl"}
+              color={useColorModeValue("gray.500", "gray.200")}
+              maxW="lg"
+              textAlign="center"
+            >
+              This page tells you my story in timeline shape.
+            </Text> */}
+          </VStack>
+        </PageSlideFade>
       </Section>
       <VStack textAlign="start" align="flex-start" mb={0}>
         <Box>
+          <StoryTimeline year={"2021"} index={0} />
           {companies.map((company, index) => (
             <StoryTimeline icon={BsFillBriefcaseFill} index={index}>
               {" "}
