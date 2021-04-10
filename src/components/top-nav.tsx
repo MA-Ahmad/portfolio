@@ -40,7 +40,7 @@ const mobileLinks = [
   { name: "Open Source", path: "/open-source" },
   { name: "Blog", path: "/blog" },
   { name: "Tech Stack", path: "/tech-stack" },
-  { name: "My Story", path: "/story-timeline" }
+  { name: "Developer Story", path: "/story-timeline" }
   
 ];
 
@@ -172,7 +172,7 @@ export default function TopNav() {
                           size={18}
                           color={useColorModeValue("blue.500", "blue.200")}
                         />
-                        <Text>My Story</Text>
+                        <Text>Developer Story</Text>
                       </HStack>
                     </MenuItem>
                   </Link>
