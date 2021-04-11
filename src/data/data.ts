@@ -71,7 +71,7 @@ export const institutes = [
       {
         title: "Speed Programming Battle",
         description:
-          "Won a Winners Trophy in Speed Programming Competition held at FAST - NUCES for different batches.",
+          "Won speed programming battle which held at FAST - NUCES.",
         date: "May 1, 2015"
       },
       {
@@ -81,9 +81,9 @@ export const institutes = [
         date: "May 1, 2014"
       },
       {
-        title: "Programming Competition",
+        title: "Speed Programming Battle",
         description:
-          "Won a Winners Trophy in Programming Competition held at FAST - NUCES.",
+          "Won speed programming battle which held at FAST - NUCES.",
         date: "Nov 1, 2013"
       }
     ]
