@@ -20,7 +20,6 @@ import Section from "./section";
 import { PageSlideFade } from "./page-transitions";
 
 const MyStory = () => {
-  let directionIndex = 0;
 
   return (
     <VStack>
@@ -47,7 +46,7 @@ const MyStory = () => {
           {companies.map((company, index) => (
             <StoryTimeline
               icon={BsFillBriefcaseFill}
-              index={directionIndex + index}
+              index={index}
             >
               {" "}
               <HStack>
@@ -80,11 +79,7 @@ const MyStory = () => {
             <>
               <StoryTimeline
                 icon={FaGraduationCap}
-                index={
-                  institute.awards
-                    ? directionIndex + index + 1
-                    : directionIndex + index
-                }
+                index={index > 0 ? index + 1 : index}
               >
                 {" "}
                 <HStack>
@@ -114,18 +109,9 @@ const MyStory = () => {
               </StoryTimeline>
               {institute.awards &&
                 institute.awards.map((award, index1) => (
-                  <StoryTimeline icon={FaAward} index={directionIndex + index1}>
+                  <StoryTimeline icon={FaAward} index={index1 + index + 1}>
                     {" "}
                     <HStack>
-                      {/* <Image
-                        rounded="full"
-                        w={[6, 8]}
-                        h={[6, 8]}
-                        objectFit="cover"
-                        fallbackSrc={placeholder}
-                        src={<FaMedal />}
-                        alt={institute.alt}
-                      /> */}
                       <IconButton
                         colorScheme="blue"
                         rounded="full"
