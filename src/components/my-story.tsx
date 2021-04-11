@@ -7,10 +7,11 @@ import {
   Box,
   Image,
   HStack,
-  Divider
+  Divider,
+  IconButton
 } from "@chakra-ui/react";
 import { StoryTimeline } from "./story-timeline";
-import { FaGraduationCap } from "react-icons/fa";
+import { FaGraduationCap, FaAward, FaMedal } from "react-icons/fa";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import placeholder from "../assets/images/placeholder.png";
 import { companies, institutes } from "../data/data";
@@ -19,6 +20,8 @@ import Section from "./section";
 import { PageSlideFade } from "./page-transitions";
 
 const MyStory = () => {
+  let directionIndex = 0;
+
   return (
     <VStack>
       <Section mb={14}>
@@ -42,7 +45,10 @@ const MyStory = () => {
         <Box>
           <StoryTimeline year={"2021"} index={0} />
           {companies.map((company, index) => (
-            <StoryTimeline icon={BsFillBriefcaseFill} index={index}>
+            <StoryTimeline
+              icon={BsFillBriefcaseFill}
+              index={directionIndex + index}
+            >
               {" "}
               <HStack>
                 <Image
@@ -71,34 +77,87 @@ const MyStory = () => {
           ))}
           <StoryTimeline year={"2017"} index={0} />
           {institutes.map((institute, index) => (
-            <StoryTimeline icon={FaGraduationCap} index={index}>
-              {" "}
-              <HStack>
-                <Image
-                  rounded="full"
-                  w={[6, 8]}
-                  h={[6, 8]}
-                  objectFit="cover"
-                  fallbackSrc={placeholder}
-                  src={institute.logo}
-                  alt={institute.alt}
-                />
-                <VStack align="start">
-                  <Heading
-                    fontSize={[12, 13, 15]}
-                    lineHeight="shorter"
-                    fontWeight="bold"
-                  >
-                    <Box>{institute.short_title}</Box>
-                    <Box mt={1}>{institute.period}</Box>
-                  </Heading>
-                </VStack>
-              </HStack>
-              <Divider my={2} />
-              <Text fontSize={[12, 13, 15]}>{institute.role}</Text>
-            </StoryTimeline>
+            <>
+              <StoryTimeline
+                icon={FaGraduationCap}
+                index={
+                  institute.awards
+                    ? directionIndex + index + 1
+                    : directionIndex + index
+                }
+              >
+                {" "}
+                <HStack>
+                  <Image
+                    rounded="full"
+                    w={[6, 8]}
+                    h={[6, 8]}
+                    objectFit="cover"
+                    fallbackSrc={placeholder}
+                    src={institute.logo}
+                    alt={institute.alt}
+                  />
+
+                  <VStack align="start">
+                    <Heading
+                      fontSize={[12, 13, 15]}
+                      lineHeight="shorter"
+                      fontWeight="bold"
+                    >
+                      <Box>{institute.short_title}</Box>
+                      <Box mt={1}>{institute.period}</Box>
+                    </Heading>
+                  </VStack>
+                </HStack>
+                <Divider my={2} />
+                <Text fontSize={[12, 13, 15]}>{institute.role}</Text>
+              </StoryTimeline>
+              {institute.awards &&
+                institute.awards.map((award, index1) => (
+                  <StoryTimeline icon={FaAward} index={directionIndex + index1}>
+                    {" "}
+                    <HStack>
+                      {/* <Image
+                        rounded="full"
+                        w={[6, 8]}
+                        h={[6, 8]}
+                        objectFit="cover"
+                        fallbackSrc={placeholder}
+                        src={<FaMedal />}
+                        alt={institute.alt}
+                      /> */}
+                      <IconButton
+                        colorScheme="blue"
+                        rounded="full"
+                        size="sm"
+                        aria-label="medal"
+                        icon={<FaMedal />}
+                      />
+
+                      <VStack align="start">
+                        <Heading
+                          fontSize={[12, 13, 15]}
+                          lineHeight="shorter"
+                          fontWeight="bold"
+                        >
+                          <Box>{award.title}</Box>
+                          <Box mt={1}>{award.date}</Box>
+                        </Heading>
+                      </VStack>
+                    </HStack>
+                    <Divider my={2} />
+                    <Text fontSize={[12, 13, 15]}>{award.description}</Text>
+                  </StoryTimeline>
+                ))}
+
+              <StoryTimeline
+                year={institute.startingYear}
+                index={0}
+                skipTrail={index === institutes.length - 1 ? true : false}
+              />
+            </>
           ))}
-          <StoryTimeline year={"2011"} index={0} skipTrail={true} />
+          {/* <StoryTimeline year={"2011"} index={0} skipTrail={true} /> */}
         </Box>
       </VStack>
     </VStack>
