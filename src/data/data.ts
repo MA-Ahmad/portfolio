@@ -59,22 +59,44 @@ export const companies = [
 
 export const institutes = [
   {
-    short_title: 'FAST - NUCES',
+    short_title: "FAST - NUCES",
     title: "National University of Computer and Emerging Sciences",
     alt: "Nuces image",
     role: "Bachelor's Degree in Computer Science",
     skills: ["project management", "web development", "data structures"],
     period: "2013 - 2017",
-    logo: UniLogo
+    startingYear: "2013",
+    logo: UniLogo,
+    awards: [
+      {
+        title: "Speed Programming Battle",
+        description:
+          "Won a Winners Trophy in Speed Programming Competition held at FAST - NUCES for different batches.",
+        date: "May 1, 2015"
+      },
+      {
+        title: "Silver Medal",
+        description:
+          "This medal was awarded to me by FAST - NUCES for getting a CGPA of 3.9 in 2nd semester.",
+        date: "May 1, 2014"
+      },
+      {
+        title: "Programming Competition",
+        description:
+          "Won a Winners Trophy in Programming Competition held at FAST - NUCES.",
+        date: "Nov 1, 2013"
+      }
+    ]
   },
   {
-    short_title: 'Govt Degree College',
+    short_title: "Govt Degree College",
     title: "Govt Degree College",
     alt: "college image",
     role: "FSC",
-    skills: ['Mathematic', 'Chemistry', 'Physics'],
+    skills: ["Mathematic", "Chemistry", "Physics"],
     period: "2011 - 2013",
-    logo: ''
+    startingYear: "2011",
+    logo: ""
   }
 ];
 
