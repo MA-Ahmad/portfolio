@@ -93,7 +93,7 @@ export const institutes = [
     title: "Govt Degree College",
     alt: "college image",
     role: "FSC",
-    skills: ["Mathematic", "Chemistry", "Physics"],
+    skills: ["mathematic", "chemistry", "physics"],
     period: "2011 - 2013",
     startingYear: "2011",
     logo: ""
