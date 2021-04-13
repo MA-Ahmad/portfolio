@@ -5,7 +5,6 @@ import BrainplowLogo from "../assets/images/logos/brainplow.jpg";
 import UniLogo from "../assets/images/logos/fast.png";
 import figma from "../assets/images/skills/figma.png";
 import vscode from "../assets/images/skills/vscode.png";
-import grammarly from "../assets/images/skills/grammarly.png";
 import ruby from "../assets/images/skills/ruby.png";
 import rails from "../assets/images/skills/rails.png";
 import javascript from "../assets/images/skills/javascript.png";
