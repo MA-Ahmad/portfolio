@@ -16,3 +16,4 @@ type project = {
     tags: string[];
     github_url: string;
   }
+  
