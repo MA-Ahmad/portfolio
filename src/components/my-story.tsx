@@ -1,7 +1,6 @@
 import * as React from "react";
 import {
   Text,
-  useColorModeValue,
   VStack,
   Heading,
   Box,
@@ -92,7 +91,6 @@ const MyStory = () => {
                     src={institute.logo}
                     alt={institute.alt}
                   />
-
                   <VStack align="start">
                     <Heading
                       fontSize={[12, 13, 15]}
@@ -143,7 +141,6 @@ const MyStory = () => {
               />
             </>
           ))}
-          {/* <StoryTimeline year={"2011"} index={0} skipTrail={true} /> */}
         </Box>
       </VStack>
     </VStack>
