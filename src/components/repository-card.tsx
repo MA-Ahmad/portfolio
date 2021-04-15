@@ -1,36 +1,19 @@
 import * as React from "react";
 import {
   Box,
-  Image,
-  Link,
   useColorModeValue,
   VStack,
   Text,
-  Skeleton,
-  AspectRatio,
   HStack,
   Tag,
   Icon,
-  useDisclosure,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalCloseButton,
-  ModalBody,
-  ModalHeader,
-  Center,
   Flex,
-  IconButton,
   Tooltip
 } from "@chakra-ui/react";
 import { MotionBox } from "./motion";
 import { getTagColor } from "../style/theme";
-import { AiOutlineStar } from "react-icons/ai";
 import { BiGitRepoForked, BiStar } from "react-icons/bi";
 import { FiGithub } from "react-icons/fi";
-import { motion } from "framer-motion";
-import { CardTransition } from "./page-transitions";
-import LazyImage from "./lazy-image";
 
 interface RepositoryCardProps {
   title: string;
