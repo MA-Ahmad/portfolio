@@ -24,7 +24,7 @@ import {
   Tooltip
 } from "@chakra-ui/react";
 import { MotionBox } from "./motion";
-import { getLanguageColor } from "../style/theme";
+import { getTagColor } from "../style/theme";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiGitRepoForked, BiStar } from "react-icons/bi";
 import { FiGithub } from "react-icons/fi";
@@ -118,7 +118,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
               <Flex justifyContent={"space-between"} width="100%">
                 <Box>
                   <HStack spacing="1">
-                    <Tag size="sm" colorScheme={getLanguageColor(language)}>
+                    <Tag size="sm" colorScheme={getTagColor(language)}>
                       <Text fontSize={["0.55rem", "inherit", "inherit"]}>
                         {language}
                       </Text>
