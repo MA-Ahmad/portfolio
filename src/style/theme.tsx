@@ -177,30 +177,17 @@ export const theme = extendTheme({
   },
 });
 
-export const getTypeColor = type => {
+export const getTagColor = type => {
+  type = type.toLowerCase()
   if (type === "rails" || type === "ruby") {
     return "red";
   } else if (type === "react") {
     return "cyan";
   } else if (type === "javascript") {
     return "yellow";
-  } else if (type === "typescript" || type === "tailwindCss") {
+  } else if (type === "typescript" || type === "tailwindcss") {
     return "blue";
-  } else if (type === "chakraUi") {
-    return "teal";
-  }
-};
-
-export const getLanguageColor = type => {
-  if (type === "Rails" || type === "Ruby") {
-    return "red";
-  } else if (type === "React") {
-    return "cyan";
-  } else if (type === "JavaScript") {
-    return "yellow";
-  } else if (type === "TypeScript") {
-    return "blue";
-  } else if (type === "CSS") {
+  } else if (type === "chakraui" || type === "css") {
     return "teal";
   }
 };
