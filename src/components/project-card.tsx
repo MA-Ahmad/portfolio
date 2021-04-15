@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { BsImages } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
-import { getTypeColor } from "../style/theme";
+import { getTagColor } from "../style/theme";
 import LazyImage from "./lazy-image";
 // import Image from "./image";
 // import { usePalette } from "react-palette";
@@ -100,7 +100,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 </Text>
                 <HStack spacing="1">
                   {technologies.map(tech => (
-                    <Tag size="sm" colorScheme={getTypeColor(tech)}>
+                    <Tag size="sm" colorScheme={getTagColor(tech)}>
                       {tech}
                     </Tag>
                   ))}
