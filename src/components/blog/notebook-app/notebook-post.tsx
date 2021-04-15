@@ -22,7 +22,7 @@ import { FaEye } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
 import { articles } from "../../../data/posts/articles";
-import { getTypeColor } from "../../../style/theme";
+import { getTagColor } from "../../../style/theme";
 import Carousel from "../carousel";
 
 export interface PostProps {}
@@ -92,7 +92,7 @@ const NotebookPost: React.SFC<PostProps> = () => {
               size="sm"
               padding="0 3px"
               key={tag}
-              colorScheme={getTypeColor(tag)}
+              colorScheme={getTagColor(tag)}
             >
               {tag}
             </Tag>
