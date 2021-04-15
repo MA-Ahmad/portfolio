@@ -17,7 +17,7 @@ import {
 import { Link as NavLink } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { MotionBox } from "../motion";
-import { getTypeColor } from "../../style/theme";
+import { getTagColor } from "../../style/theme";
 import dev from "../../assets/images/logos/dev.png";
 import dev2 from "../../assets/images/logos/dev_white.png";
 import { CardTransition } from "../page-transitions";
@@ -129,7 +129,7 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
                 size="sm"
                 padding="0 3px"
                 key={tag}
-                colorScheme={getTypeColor(tag)}
+                colorScheme={getTagColor(tag)}
               >
                 {tag}
               </Tag>
@@ -142,7 +142,7 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
               size="sm"
               padding="0 3px"
               key={tag}
-              colorScheme={getTypeColor(tag)}
+              colorScheme={getTagColor(tag)}
             >
               {tag}
             </Tag>
