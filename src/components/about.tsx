@@ -8,7 +8,6 @@ import {
   Text,
   Tag,
   Image,
-  Skeleton,
   useColorMode,
   useColorModeValue
 } from "@chakra-ui/react";
