@@ -12,7 +12,6 @@ import {
   Link,
   Image,
   Avatar,
-  IconButton,
 } from "@chakra-ui/react";
 import { BsImages } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
