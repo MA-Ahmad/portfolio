@@ -13,7 +13,6 @@ import {
   Image,
   Avatar,
   IconButton,
-  Stack
 } from "@chakra-ui/react";
 import { BsImages } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
