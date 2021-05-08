@@ -1,7 +1,7 @@
 import * as React from "react";
 import { IconButton, Box, Flex } from "@chakra-ui/react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { IconType } from "react-icons/lib/cjs";
 import { MotionImage } from "../motion";
 
@@ -9,21 +9,21 @@ const variants = {
   enter: (direction: number) => {
     return {
       x: direction > 0 ? 1000 : -1000,
-      opacity: 0
+      opacity: 0,
     };
   },
   center: {
     zIndex: 1,
     x: 0,
-    opacity: 1
+    opacity: 1,
   },
   exit: (direction: number) => {
     return {
       zIndex: 0,
       x: direction < 0 ? 1000 : -1000,
-      opacity: 0
+      opacity: 0,
     };
-  }
+  },
 };
 
 const swipeConfidenceThreshold = 10000;
@@ -77,9 +77,7 @@ export interface CarouselProps {
   images: string[];
 }
 
-const Carousel: React.SFC<CarouselProps> = ({
-  images
-}) => {
+const Carousel: React.SFC<CarouselProps> = ({ images }) => {
   const [[page, direction], setPage] = React.useState([0, 0]);
   const [imageIndex, setImageIndex] = React.useState<number>(0);
 
@@ -98,9 +96,7 @@ const Carousel: React.SFC<CarouselProps> = ({
 
   const prevImage = (newDirection: number) => {
     paginate(newDirection);
-    setImageIndex(
-      0 === imageIndex ? images.length - 1 : imageIndex - 1
-    );
+    setImageIndex(0 === imageIndex ? images.length - 1 : imageIndex - 1);
   };
 
   return (
@@ -126,7 +122,7 @@ const Carousel: React.SFC<CarouselProps> = ({
           exit="exit"
           transition={{
             x: { type: "spring", stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 }
+            opacity: { duration: 0.2 },
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}

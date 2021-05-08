@@ -8,7 +8,7 @@ import {
   Tag,
   Icon,
   Flex,
-  Tooltip
+  Tooltip,
 } from "@chakra-ui/react";
 import { MotionBox } from "./motion";
 import { getTagColor } from "../style/theme";
@@ -32,7 +32,6 @@ const RepositoryCard = (props: RepositoryCardProps) => {
     url,
     stargazers_count,
     forks_count,
-    created_at
   } = props;
 
   const handleLinkClick = (
@@ -56,7 +55,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
         borderColor={useColorModeValue("gray.100", "gray.700")}
         _hover={{
           shadow: "lg",
-          textDecoration: "none"
+          textDecoration: "none",
         }}
       >
         <VStack overflow="hidden" align="start" spacing={1}>
@@ -64,7 +63,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
             <Flex
               justifyContent={"space-between"}
               width="100%"
-              onClick={e => handleLinkClick(e, url)}
+              onClick={(e) => handleLinkClick(e, url)}
             >
               <Tooltip hasArrow label="Github link" placement="top">
                 <HStack cursor={"pointer"}>
@@ -80,7 +79,10 @@ const RepositoryCard = (props: RepositoryCardProps) => {
                   </Text>
                 </HStack>
               </Tooltip>
-              <HStack cursor={"pointer"} onClick={e => handleLinkClick(e, url)}>
+              <HStack
+                cursor={"pointer"}
+                onClick={(e) => handleLinkClick(e, url)}
+              >
                 {forks_count && (
                   <Box _hover={{ color: "blue.500" }}>
                     <Icon as={BiGitRepoForked} boxSize="0.9em" mt={"1px"} />

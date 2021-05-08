@@ -13,10 +13,9 @@ import {
   ListItem,
   Icon,
   Flex,
-  Image,
   Box,
   Button,
-  Divider
+  Divider,
 } from "@chakra-ui/react";
 import { FaEye } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
@@ -87,7 +86,7 @@ const NotebookPost: React.SFC<PostProps> = () => {
           </Tooltip>
         </HStack>
         <HStack spacing={1} alignItems="center">
-          {post.tags.map(tag => (
+          {post.tags.map((tag) => (
             <Tag
               size="sm"
               padding="0 3px"

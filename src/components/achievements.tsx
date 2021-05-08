@@ -3,24 +3,10 @@ import {
   FiPackage,
   FiHome,
   FiEdit2,
-  FiUser,
   FiUsers,
-  FiTwitter,
-  FiBarChart2
+  FiBarChart2,
 } from "react-icons/fi";
-import {
-  List,
-  ListItem,
-  ListIcon,
-  Progress,
-  Text,
-  useColorModeValue,
-  VStack,
-  Heading,
-  Box,
-  Link,
-  LinkProps
-} from "@chakra-ui/react";
+import { VStack, Heading, Box, Link, LinkProps } from "@chakra-ui/react";
 import { TimelineItem } from "./Timeline";
 import { PageSlideFade } from "./page-transitions";
 import { Link as NavLink } from "react-router-dom";

@@ -7,13 +7,13 @@ import {
   Box,
   Link,
   Image,
-  Skeleton
+  Skeleton,
 } from "@chakra-ui/react";
 import { usePalette } from "react-palette";
 import { MotionBox } from "./motion";
 
 const SkillCard = ({ name, image, link, description }) => {
-  const { data, loading, error } = usePalette(image);
+  const { data, loading } = usePalette(image);
 
   return (
     <MotionBox whileHover={{ y: -5 }}>
@@ -36,7 +36,6 @@ const SkillCard = ({ name, image, link, description }) => {
             position="relative"
             overflow="hidden"
             lineHeight={0}
-            rounded="lg"
             boxShadow="inset 0 0 1px 1px rgba(0, 0, 0, 0.015)"
           >
             <Box

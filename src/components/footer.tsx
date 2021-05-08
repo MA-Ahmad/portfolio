@@ -6,15 +6,14 @@ import {
   Box,
   Text,
   useColorModeValue,
-  HStack,
-  Flex
+  Flex,
 } from "@chakra-ui/react";
 import siteConfig from "../configs/site-config";
 
 const iconProps = {
   variant: "ghost",
   size: "lg",
-  isRound: true
+  isRound: true,
 };
 
 const Footer = () => {

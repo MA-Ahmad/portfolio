@@ -5,7 +5,6 @@ import {
   Avatar,
   HStack,
   Button,
-  VStack,
   Text,
   Link,
   IconButton,
@@ -16,7 +15,7 @@ import {
   MenuList,
   MenuItem,
   Stack,
-  Icon
+  Icon,
 } from "@chakra-ui/react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -32,7 +31,7 @@ import { BsBook } from "react-icons/bs";
 
 const webLinks = [
   { name: "About", path: "/about" },
-  { name: "Blog", path: "/blog" }
+  { name: "Blog", path: "/blog" },
 ];
 
 const mobileLinks = [
@@ -40,8 +39,7 @@ const mobileLinks = [
   { name: "Open Source", path: "/open-source" },
   { name: "Blog", path: "/blog" },
   { name: "Tech Stack", path: "/tech-stack" },
-  { name: "Developer Story", path: "/story-timeline" }
-  
+  { name: "Developer Story", path: "/story-timeline" },
 ];
 
 interface NavLinkProps {
@@ -60,10 +58,10 @@ const NavLink = (props: NavLinkProps) => {
       rounded={"md"}
       _hover={{
         textDecoration: "none",
-        bg: useColorModeValue("gray.200", "gray.900")
+        bg: useColorModeValue("gray.200", "gray.900"),
       }}
       _activeLink={{
-        color: useColorModeValue("blue.500", "blue.200")
+        color: useColorModeValue("blue.500", "blue.200"),
       }}
       onClick={() => props.onClose()}
       to={props.path}
@@ -78,7 +76,7 @@ export default function TopNav() {
 
   const menuProps = {
     bg: useColorModeValue("gray.200", "gray.900"),
-    color: useColorModeValue("blue.500", "blue.200")
+    color: useColorModeValue("blue.500", "blue.200"),
   };
 
   return (
@@ -202,7 +200,7 @@ export default function TopNav() {
               bg={useColorModeValue("white", "gray.700")}
               _hover={{
                 textDecoration: "none",
-                bg: useColorModeValue("gray.200", "gray.900")
+                bg: useColorModeValue("gray.200", "gray.900"),
               }}
             />
             <ColorModeSwitcher justifySelf="flex-end" />

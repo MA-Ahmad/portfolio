@@ -1,10 +1,4 @@
-import {
-  Box,
-  Flex,
-  Image,
-  Skeleton,
-  forwardRef,
-} from "@chakra-ui/react";
+import { Box, Flex, Image, forwardRef } from "@chakra-ui/react";
 import { motion, isValidMotionProp } from "framer-motion";
 import placeholder from "../assets/images/placeholder.png";
 
@@ -33,12 +27,6 @@ export const MotionImage = motion.custom(
       // do not pass framer props to DOM element
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
     );
-    return (
-        <Image
-          ref={ref}
-          fallbackSrc={placeholder}
-          {...chakraProps}
-        />
-    );
+    return <Image ref={ref} fallbackSrc={placeholder} {...chakraProps} />;
   })
 );

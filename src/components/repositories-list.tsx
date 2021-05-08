@@ -7,20 +7,18 @@ import {
   useColorModeValue,
   SimpleGrid,
   Box,
-  useBoolean,
-  useMediaQuery
+  useMediaQuery,
 } from "@chakra-ui/react";
-import { PageSlideFade, StaggerChildren } from "./page-transitions";
+import { PageSlideFade } from "./page-transitions";
 import RepositoryCard from "./repository-card";
 import StackGrid from "react-stack-grid";
 import Header from "./header";
-import { MotionBox } from "./motion";
 import CardSkeleton from "./card-skeleton";
 
 const TURQUOISE = "#06b6d4";
 
 const RepositoriesList = () => {
-  const { get, loading, error, data } = useFetch("https://api.github.com");
+  const { get, loading } = useFetch("https://api.github.com");
   const [repos, setRepos] = useState([]);
   const [isLargerThan720] = useMediaQuery("(min-width: 720px)");
   const [isLargerThan982] = useMediaQuery("(min-width: 982px)");
@@ -37,11 +35,12 @@ const RepositoriesList = () => {
   }
 
   useEffect(() => {
-    get("/users/MA-Ahmad/repos").then(res => {
+    get("/users/MA-Ahmad/repos").then((res) => {
       setRepos(
         res?.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 8)
       );
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

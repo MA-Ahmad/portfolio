@@ -12,11 +12,10 @@ import {
   Flex,
   Image,
   Badge,
-  Box
+  Box,
 } from "@chakra-ui/react";
 import { Link as NavLink } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
-import { MotionBox } from "../motion";
 import { getTagColor } from "../../style/theme";
 import dev from "../../assets/images/logos/dev.png";
 import dev2 from "../../assets/images/logos/dev_white.png";
@@ -124,7 +123,7 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
             </Text>
           </Tooltip>
           <HStack spacing={1} alignItems="center" d={["none", "none", "flex"]}>
-            {article.tags.map(tag => (
+            {article.tags.map((tag) => (
               <Tag
                 size="sm"
                 padding="0 3px"
@@ -137,7 +136,7 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
           </HStack>
         </HStack>
         <HStack spacing={1} alignItems="center" d={["flex", "flex", "none"]}>
-          {article.tags.map(tag => (
+          {article.tags.map((tag) => (
             <Tag
               size="sm"
               padding="0 3px"

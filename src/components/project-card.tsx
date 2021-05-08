@@ -5,15 +5,8 @@ import {
   Text,
   useColorModeValue,
   Tag,
-  TagLabel,
-  TagRightIcon,
-  Box,
-  AspectRatio,
   Link,
-  Image,
-  Avatar,
 } from "@chakra-ui/react";
-import { BsImages } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
 import { getTagColor } from "../style/theme";
 import LazyImage from "./lazy-image";
@@ -35,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   logo,
   blurHash,
   link,
-  technologies
+  technologies,
 }) => {
   // const { data, loading, error } = usePalette(logo[0].thumbnails.large.url);
 
@@ -71,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           layout="fixed"
           rounded="md"
         /> */}
-        
+
         <LazyImage
           src={logo}
           blurHash={blurHash}
@@ -91,13 +84,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   fontWeight="bold"
                   fontSize="md"
                   noOfLines={1}
-                  onClick={e => e.stopPropagation()}
+                  onClick={(e) => e.stopPropagation()}
                   isExternal
                 >
                   {title}
                 </Text>
                 <HStack spacing="1">
-                  {technologies.map(tech => (
+                  {technologies.map((tech) => (
                     <Tag size="sm" colorScheme={getTagColor(tech)}>
                       {tech}
                     </Tag>
