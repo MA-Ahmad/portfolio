@@ -16,10 +16,9 @@ import {
 } from "@chakra-ui/react";
 import { Link as NavLink } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
-import { MotionBox } from "../motion";
-import { getTagColor } from "../../style/theme";
-import dev from "../../assets/images/logos/dev.png";
-import dev2 from "../../assets/images/logos/dev_white.png";
+import { getTagColor } from "style/theme";
+import dev from "assets/images/logos/dev.png";
+import dev2 from "assets/images/logos/dev_white.png";
 import { CardTransition } from "../page-transitions";
 
 export interface PostCardProps {
