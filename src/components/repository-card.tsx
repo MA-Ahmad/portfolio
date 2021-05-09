@@ -11,7 +11,7 @@ import {
   Tooltip
 } from "@chakra-ui/react";
 import { MotionBox } from "./motion";
-import { getTagColor } from "../style/theme";
+import { getTagColor } from "style/theme";
 import { BiGitRepoForked, BiStar } from "react-icons/bi";
 import { FiGithub } from "react-icons/fi";
 

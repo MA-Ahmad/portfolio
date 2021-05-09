@@ -9,7 +9,7 @@ import {
   HStack,
   Flex
 } from "@chakra-ui/react";
-import siteConfig from "../configs/site-config";
+import siteConfig from "configs/site-config";
 
 const iconProps = {
   variant: "ghost",

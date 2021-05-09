@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import useSound from "use-sound";
-import lightswitch from "../src/assets/audios/lightswitch.mp3";
+import lightswitch from "assets/audios/lightswitch.mp3";
 
 type ColorModeSwitcherProps = Omit<IconButtonProps, "aria-label">;
 

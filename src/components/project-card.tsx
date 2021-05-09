@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { BsImages } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
-import { getTagColor } from "../style/theme";
+import { getTagColor } from "style/theme";
 import LazyImage from "./lazy-image";
 // import Image from "./image";
 // import { usePalette } from "react-palette";

@@ -1,5 +1,5 @@
 import * as React from "react";
-import Header from "../../header";
+import Header from "components/header";
 import {
   VStack,
   HStack,
@@ -21,9 +21,9 @@ import {
 import { FaEye } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
-import { articles } from "../../../data/posts/articles";
-import { getTagColor } from "../../../style/theme";
-import Carousel from "../carousel";
+import { articles } from "data/posts/articles";
+import { getTagColor } from "style/theme";
+import Carousel from "components/blog/carousel";
 
 export interface PostProps {}
 

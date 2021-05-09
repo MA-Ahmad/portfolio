@@ -11,7 +11,7 @@ import {
   useColorMode,
   useColorModeValue
 } from "@chakra-ui/react";
-import placeholder from "../assets/images/placeholder.png";
+import placeholder from "assets/images/placeholder.png";
 import { FaGraduationCap } from "react-icons/fa";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import {
@@ -20,7 +20,7 @@ import {
   CardTransition
 } from "./page-transitions";
 import { MotionBox } from "./motion";
-import { companies, institutes } from "../data/data";
+import { companies, institutes } from "data/data";
 import Header from "./header";
 
 interface CardProps {

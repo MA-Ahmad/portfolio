@@ -2,7 +2,7 @@ import * as React from "react";
 import ProgressiveImage from "react-progressive-image";
 import { BlurhashCanvas } from "react-blurhash";
 import { Image } from "@chakra-ui/react";
-import placeholder from "../assets/images/placeholder.png";
+import placeholder from "assets/images/placeholder.png";
 
 type LazyImageProps = {
   src: string;

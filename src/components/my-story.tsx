@@ -12,8 +12,8 @@ import {
 import { StoryTimeline } from "./story-timeline";
 import { FaGraduationCap, FaAward, FaMedal } from "react-icons/fa";
 import { BsFillBriefcaseFill } from "react-icons/bs";
-import placeholder from "../assets/images/placeholder.png";
-import { companies, institutes } from "../data/data";
+import placeholder from "assets/images/placeholder.png";
+import { companies, institutes } from "data/data";
 import Header from "./header";
 import Section from "./section";
 import { PageSlideFade } from "./page-transitions";

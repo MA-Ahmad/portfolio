@@ -20,7 +20,7 @@ import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
 import { BiDesktop } from "react-icons/bi";
 import { GiSpiderWeb } from "react-icons/gi";
 import SkillCard from "./skill-card";
-import { skills } from "../data/data";
+import { skills } from "data/data";
 import Header from "./header";
 
 const TechStack = () => {

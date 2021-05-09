@@ -15,9 +15,9 @@ import { Link as NavLink } from "react-router-dom";
 import { MotionBox, MotionFlex } from "./motion";
 import Header from "./header";
 import Projects from "./projects";
-import { projectsList } from "../data/projects-list";
-import "../style/style.css";
-import UserIcon from "../../src/assets/images/user_icon.png";
+import { projectsList } from "data/projects-list";
+import "style/style.css";
+import UserIcon from "assets/images/user_icon.png";
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = "#ff9400";

@@ -1,8 +1,8 @@
-import peterpitch from "../assets/images/projects/pp.png";
-import notch from "../assets/images/projects/notch.png";
-import workof from "../assets/images/projects/workof.png";
-import souq from "../assets/images/projects/souq.png";
-import gosave from "../assets/images/projects/gosave.png";
+import peterpitch from "assets/images/projects/pp.png";
+import notch from "assets/images/projects/notch.png";
+import workof from "assets/images/projects/workof.png";
+import souq from "assets/images/projects/souq.png";
+import gosave from "assets/images/projects/gosave.png";
 
 export const projectsList = [
   {

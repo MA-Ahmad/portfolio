@@ -1,10 +1,10 @@
 import * as React from "react";
 import { VStack, Stack } from "@chakra-ui/react";
-import { articles } from "../../data/posts/articles";
+import { articles } from "data/posts/articles";
 import PostCard from "./post-card";
-import { PageSlideFade, StaggerChildren } from "../page-transitions";
-import Header from "../header";
-import { MotionBox } from "../motion";
+import { PageSlideFade, StaggerChildren } from "components/page-transitions";
+import Header from "components/header";
+import { MotionBox } from "components/motion";
 
 const TURQUOISE = "#06b6d4";
 
