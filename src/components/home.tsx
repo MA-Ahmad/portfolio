@@ -130,22 +130,17 @@ const Home = () => {
             <ListItem>
                 <Link as={NavLink} to="/story-timeline">
                   Story page
-                  <Badge ml="1" colorScheme="green">
+                  {/* <Badge ml="1" colorScheme="green">
                     New
-                  </Badge>
+                  </Badge> */}
                 </Link>
               </ListItem>
               <ListItem>
                 <Link as={NavLink} to="/tech-stack">
                   Tech Stack
-                  <Badge ml="1" colorScheme="green">
+                  {/* <Badge ml="1" colorScheme="green">
                     New
-                  </Badge>
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link as={NavLink} to="/blog/notebook-app">
-                  How to create Notebook app with React and CharaUi?{" "}
+                  </Badge> */}
                 </Link>
               </ListItem>
               <ListItem>
