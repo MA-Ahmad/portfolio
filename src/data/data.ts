@@ -5,6 +5,7 @@ import BrainplowLogo from "assets/images/logos/brainplow.jpg";
 import UniLogo from "assets/images/logos/fast.png";
 import figma from "assets/images/skills/figma.png";
 import vscode from "assets/images/skills/vscode.png";
+import react from "assets/images/skills/react.png";
 import ruby from "assets/images/skills/ruby.png";
 import rails from "assets/images/skills/rails.png";
 import javascript from "assets/images/skills/javascript.png";
@@ -106,6 +107,13 @@ export const skills = [
     link: "https://rubyonrails.org/",
     type: "development",
     image: rails
+  },
+  {
+    name: "React",
+    description: "Web development",
+    link: "https://reactjs.org/",
+    type: "development",
+    image: react
   },
   {
     name: "Ruby",
