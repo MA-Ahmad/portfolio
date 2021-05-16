@@ -3,24 +3,10 @@ import {
   FiPackage,
   FiHome,
   FiEdit2,
-  FiUser,
   FiUsers,
-  FiTwitter,
   FiBarChart2
 } from "react-icons/fi";
-import {
-  List,
-  ListItem,
-  ListIcon,
-  Progress,
-  Text,
-  useColorModeValue,
-  VStack,
-  Heading,
-  Box,
-  Link,
-  LinkProps
-} from "@chakra-ui/react";
+import { VStack, Heading, Box, Link, LinkProps } from "@chakra-ui/react";
 import { TimelineItem } from "./Timeline";
 import { PageSlideFade } from "./page-transitions";
 import { Link as NavLink } from "react-router-dom";
@@ -72,9 +58,6 @@ const Achievements = () => {
           </Heading>
           <Box>
             <TimelineItem icon={FiUsers}>Became a dad ❤️</TimelineItem>
-            {/* <TimelineItem icon={FiEdit2}>
-        Wrote <a href="/posts">6 blog posts</a>
-      </TimelineItem> */}
             <TimelineItem icon={FiPackage}>
               Published my first post on this website{" "}
               <InternalLink color={"blue.200"} url="/blog" text={"Blog"} />
