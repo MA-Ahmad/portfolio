@@ -108,7 +108,7 @@ const Achievements = () => {
               />
             </TimelineItem>
             <TimelineItem icon={FiBarChart2}>
-              Collected 674 post views and 16 total reactions on{" "}
+              Collected 650+ post views and 15+ total reactions on{" "}
               <ExternalLink
                 color={"blue.200"}
                 url="https://dev.to/m_ahmad"
