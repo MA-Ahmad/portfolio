@@ -84,11 +84,11 @@ const Achievements = () => {
               <InternalLink
                 color={"blue.200"}
                 url="/open-source"
-                text={"6 open-source repositories"}
+                text={"9 open-source repositories"}
               />
             </TimelineItem>
             <TimelineItem icon={FiBarChart2}>
-              Collected 1100 post views and 10 total reactions for 5 posts on{" "}
+              Collected 6k+ post views and 350+ total reactions on{" "}
               <ExternalLink
                 color={"blue.200"}
                 url="https://dev.to/m_ahmad"
@@ -125,7 +125,7 @@ const Achievements = () => {
               />
             </TimelineItem>
             <TimelineItem icon={FiBarChart2}>
-              Collected 674 post views and 16 total reactions for 5 posts on{" "}
+              Collected 674 post views and 16 total reactions on{" "}
               <ExternalLink
                 color={"blue.200"}
                 url="https://dev.to/m_ahmad"
