@@ -32,7 +32,7 @@ const RepositoriesList = () => {
             Open Source
           </Header>
           <HStack>
-          <Tooltip hasArrow label="Live github data" placement="top">
+          <Tooltip hasArrow label="Live github repos" placement="top">
             <IconButton
               aria-label={"live"}
               size="md"
@@ -43,7 +43,7 @@ const RepositoriesList = () => {
               {...iconProps}
             />
             </Tooltip>
-          <Tooltip hasArrow label="Offline github data" placement="top">
+          <Tooltip hasArrow label="Local github repos" placement="top">
             <IconButton
               aria-label={"live"}
               size="md"
