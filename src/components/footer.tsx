@@ -6,7 +6,6 @@ import {
   Box,
   Text,
   useColorModeValue,
-  HStack,
   Flex
 } from "@chakra-ui/react";
 import siteConfig from "configs/site-config";

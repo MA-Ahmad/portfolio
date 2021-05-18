@@ -5,20 +5,11 @@ import {
   Text,
   useColorModeValue,
   Tag,
-  TagLabel,
-  TagRightIcon,
-  Box,
-  AspectRatio,
   Link,
-  Image,
-  Avatar,
 } from "@chakra-ui/react";
-import { BsImages } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
 import { getTagColor } from "style/theme";
 import LazyImage from "./lazy-image";
-// import Image from "./image";
-// import { usePalette } from "react-palette";
 
 interface ProjectCardProps {
   title: string;
@@ -37,14 +28,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
   technologies
 }) => {
-  // const { data, loading, error } = usePalette(logo[0].thumbnails.large.url);
-
   const textColor = useColorModeValue("gray.500", "gray.200");
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    // <Link href={link} isExternal>
     <motion.div layout onClick={toggleOpen}>
       <HStack
         p={4}
@@ -58,20 +46,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         align="start"
         spacing={4}
         cursor="pointer"
-        // transition="all 0.25s"
-        // transition-timing-function="spring(1 100 10 10)"
-        // _hover={{ transform: "translateY(-4px)", shadow: "lg" }}
         _hover={{ shadow: "lg" }}
       >
-        {/* <Image
-          src={logo}
-          size="sm"
-          width={33}
-          height={33}
-          layout="fixed"
-          rounded="md"
-        /> */}
-        
         <LazyImage
           src={logo}
           blurHash={blurHash}
@@ -143,7 +119,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </VStack>
       </HStack>
     </motion.div>
-    // </Link>
   );
 };
 

@@ -5,7 +5,6 @@ import {
   Avatar,
   HStack,
   Button,
-  VStack,
   Text,
   Link,
   IconButton,

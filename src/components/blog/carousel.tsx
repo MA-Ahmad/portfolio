@@ -1,7 +1,7 @@
 import * as React from "react";
 import { IconButton, Box, Flex } from "@chakra-ui/react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { IconType } from "react-icons/lib/cjs";
 import { MotionImage } from "components/motion";
 

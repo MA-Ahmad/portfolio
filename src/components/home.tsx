@@ -138,9 +138,6 @@ const Home = () => {
               <ListItem>
                 <Link as={NavLink} to="/tech-stack">
                   Tech Stack
-                  {/* <Badge ml="1" colorScheme="green">
-                    New
-                  </Badge> */}
                 </Link>
               </ListItem>
               <ListItem>

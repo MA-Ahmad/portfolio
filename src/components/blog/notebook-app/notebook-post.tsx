@@ -13,7 +13,6 @@ import {
   ListItem,
   Icon,
   Flex,
-  Image,
   Box,
   Button,
   Divider

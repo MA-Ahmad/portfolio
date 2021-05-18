@@ -5,7 +5,6 @@ import {
   VStack,
   HStack,
   Text,
-  Heading,
   Tabs,
   TabList,
   TabPanels,

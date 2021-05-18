@@ -22,7 +22,6 @@ interface RepositoryCardProps {
   language: string;
   stargazers_count: number;
   forks_count: number;
-  created_at: string;
 }
 const RepositoryCard = (props: RepositoryCardProps) => {
   const {
@@ -32,7 +31,6 @@ const RepositoryCard = (props: RepositoryCardProps) => {
     url,
     stargazers_count,
     forks_count,
-    created_at
   } = props;
 
   const handleLinkClick = (
