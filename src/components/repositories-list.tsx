@@ -66,7 +66,6 @@ const RepositoriesList = () => {
               icon={<RiWifiOffLine />}
               isActive={activeTab === "offline"}
               onClick={() => handleClick('offline')}
-              // onClick={() => setActiveTab("offline")}
               {...iconProps}
             />
             </Tooltip>
