@@ -12,6 +12,8 @@ import Header from "./header";
 import { RiSignalTowerLine, RiWifiOffLine } from "react-icons/ri";
 import OfflineData from "./offline-data";
 import LiveData from "./live-data";
+import useSound from "use-sound";
+import lightswitch from "assets/audios/lightswitch.mp3";
 
 const TURQUOISE = "#06b6d4";
 
@@ -23,6 +25,19 @@ const iconProps = {
 
 const RepositoriesList = () => {
   const [activeTab, setActiveTab] = React.useState("live");
+
+  const [play] = useSound(lightswitch, {
+    volume: 0.05,
+    sprite: {
+      on: [0, 300],
+      off: [500, 300]
+    }
+  });
+
+  const handleClick = (type) => {
+    activeTab === "live" ? play({ id: "on" }) : play({ id: "off" });
+    setActiveTab(type)
+  }
 
   return (
     <PageSlideFade>
@@ -39,7 +54,7 @@ const RepositoriesList = () => {
               colorScheme={"linkedin"}
               icon={<RiSignalTowerLine />}
               isActive={activeTab === "live"}
-              onClick={() => setActiveTab("live")}
+              onClick={() => handleClick('live')}
               {...iconProps}
             />
             </Tooltip>
@@ -50,7 +65,8 @@ const RepositoriesList = () => {
               colorScheme={"linkedin"}
               icon={<RiWifiOffLine />}
               isActive={activeTab === "offline"}
-              onClick={() => setActiveTab("offline")}
+              onClick={() => handleClick('offline')}
+              // onClick={() => setActiveTab("offline")}
               {...iconProps}
             />
             </Tooltip>
