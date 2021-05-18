@@ -7,7 +7,7 @@ import Home from "./home";
 import TechStack from "./tech-stack";
 import Achievements from "./achievements";
 import NotebookPost from "./blog/notebook-app/notebook-post";
-import EducationStory from "./education-story";
+// import EducationStory from "./education-story";
 import MyStory from "./my-story";
 
 const routes = [
