@@ -14,7 +14,7 @@ export const articles = [
     live: "https://github.com/MA-Ahmad/portfolio",
     published: "3 Apr 2021",
     readTime: "1 min read",
-    views: "1266"
+    views: "1326"
   },
   {
     title: "Create a Notebook app with React, CharaUi, and framerMotion",
@@ -29,7 +29,7 @@ export const articles = [
     published: "2 Apr 2021",
     readTime: "1 min read",
     images: images,
-    views: "2130"
+    views: "2164"
   },
   {
     title:
@@ -43,7 +43,7 @@ export const articles = [
     external: true,
     published: "2 Apr 2020",
     readTime: "1 min read",
-    views: "213"
+    views: "231"
   },
   {
     title: "How to create Notebook app with React and CharaUi?",
@@ -57,7 +57,7 @@ export const articles = [
     published: "1 Apr 2021",
     readTime: "1 min read",
     images: images,
-    views: "80"
+    views: "120"
   },
   {
     title: "Create a blog app with user authentication by using React and ROR",
@@ -69,7 +69,7 @@ export const articles = [
     external: true,
     published: "9 Oct 2020",
     readTime: "1 min read",
-    views: "289"
+    views: "321"
   },
   {
     title:
@@ -83,7 +83,7 @@ export const articles = [
     external: true,
     published: "16 Aug 2020",
     readTime: "2 min read",
-    views: "412"
+    views: "467"
   },
   {
     title: "Create ROR+React(RR) App with Tailwindcss",
@@ -96,7 +96,7 @@ export const articles = [
     external: true,
     published: "11 Aug 2020",
     readTime: "1 min read",
-    views: "446"
+    views: "458"
   },
   {
     title: "Create React App with chakraUI and formik libraries",
@@ -109,7 +109,7 @@ export const articles = [
     external: true,
     published: "8 Aug 2020",
     readTime: "1 min read",
-    views: "781"
+    views: "819"
   },
   {
     title: "Convert Video to text in Ruby",
@@ -121,6 +121,6 @@ export const articles = [
     external: true,
     published: "20 Apr 2020",
     readTime: "2 min read",
-    views: "218"
+    views: "232"
   }
 ];
