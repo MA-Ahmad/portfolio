@@ -84,7 +84,7 @@ const Achievements = () => {
               Framer-motion,{" "}
               <ExternalLink
                 color={"blue.200"}
-                url="https://github.com/MA-Ahmad/portfolio-v2"
+                url="https://github.com/MA-Ahmad/portfolio"
                 text={"source on Github"}
                 target="_blank"
               />
@@ -120,7 +120,7 @@ const Achievements = () => {
               Built my portfolio website with React and ChakraUI,{" "}
               <ExternalLink
                 color={"blue.200"}
-                url="https://github.com/MA-Ahmad/portfolio"
+                url="https://github.com/MA-Ahmad/portfolio2"
                 text={"source on Github"}
                 target="_blank"
               />
