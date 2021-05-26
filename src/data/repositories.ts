@@ -17,7 +17,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/portfolio-v2",
     live: "https://ma-ahmad.github.io/portfolio-v2",
     blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
-    stars: "17",
+    stars: "19",
     fork: "4"
   },
   {
@@ -102,7 +102,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/quickstart-rails-tailwind",
     live: "https://quickstart-rails-tailwind.herokuapp.com",
     blurHash: "LLPGmg?wRPS~D%D%ozxa00?G-;R%",
-    stars: "4"
+    stars: "5"
   },
   // {
   //   title: "Video-to-text",
