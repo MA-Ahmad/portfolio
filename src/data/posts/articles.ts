@@ -14,7 +14,7 @@ export const articles = [
     live: "https://github.com/MA-Ahmad/portfolio",
     published: "3 Apr 2021",
     readTime: "1 min read",
-    views: "1424"
+    views: "1472"
   },
   {
     title: "Create a Notebook app with React, CharaUi, and framerMotion",
@@ -29,7 +29,7 @@ export const articles = [
     published: "2 Apr 2021",
     readTime: "1 min read",
     images: images,
-    views: "2189"
+    views: "2210"
   },
   {
     title:
