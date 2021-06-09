@@ -2,6 +2,21 @@ import { images } from "./notebook-app/images";
 
 export const articles = [
   {
+    title: "Built a attractive portfolio page with React, ChakraUi, and framerMotion",
+    // desc:
+      // "Different portfolio templates to show your skills, experience, articles etc",
+    tags: ["react", "chakraUi", "framerMotion"],
+    github_url: "https://github.com/MA-Ahmad/portfolio-template1",
+    link:
+      "https://dev.to/m_ahmad/built-a-attractive-portfolio-page-with-react-chakraui-and-framermotion-djd",
+    external: true,
+    // isNew: true,
+    live: "https://ma-ahmad.github.io/portfolio-template1",
+    published: "24 May 2021",
+    readTime: "1 min read",
+    views: "689"
+  },
+  {
     title: "Built Portfolio website with React and ChakraUi",
     desc:
       "Different portfolio templates to show your skills, experience, articles etc",
@@ -10,7 +25,6 @@ export const articles = [
     link:
       "https://dev.to/m_ahmad/portfolio-website-template-built-with-react-and-chakraui-15ok",
     external: true,
-    // isNew: true,
     live: "https://github.com/MA-Ahmad/portfolio",
     published: "3 Apr 2021",
     readTime: "1 min read",
