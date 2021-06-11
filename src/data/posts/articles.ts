@@ -14,7 +14,7 @@ export const articles = [
     live: "https://ma-ahmad.github.io/portfolio-template1",
     published: "24 May 2021",
     readTime: "1 min read",
-    views: "689"
+    views: "695"
   },
   {
     title: "Built Portfolio website with React and ChakraUi",
@@ -110,7 +110,7 @@ export const articles = [
     external: true,
     published: "11 Aug 2020",
     readTime: "1 min read",
-    views: "458"
+    views: "504"
   },
   {
     title: "Create React App with chakraUI and formik libraries",
@@ -123,7 +123,7 @@ export const articles = [
     external: true,
     published: "8 Aug 2020",
     readTime: "1 min read",
-    views: "819"
+    views: "914"
   },
   {
     title: "Convert Video to text in Ruby",
@@ -135,6 +135,6 @@ export const articles = [
     external: true,
     published: "20 Apr 2020",
     readTime: "2 min read",
-    views: "232"
+    views: "263"
   }
 ];
