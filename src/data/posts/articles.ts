@@ -14,7 +14,7 @@ export const articles = [
     live: "https://ma-ahmad.github.io/portfolio-template1",
     published: "24 May 2021",
     readTime: "1 min read",
-    views: "695"
+    views: "721"
   },
   {
     title: "Built Portfolio website with React and ChakraUi",
@@ -28,7 +28,7 @@ export const articles = [
     live: "https://github.com/MA-Ahmad/portfolio",
     published: "3 Apr 2021",
     readTime: "1 min read",
-    views: "1472"
+    views: "1500"
   },
   {
     title: "Create a Notebook app with React, CharaUi, and framerMotion",
