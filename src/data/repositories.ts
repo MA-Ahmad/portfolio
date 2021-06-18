@@ -38,7 +38,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/card-portfolio",
     live: "https://ma-ahmad.github.io/card-portfolio",
     blurHash: "L15#hiax00og^Uf65Nj]oPfkWRf6",
-    stars: "4"
+    stars: "5"
   },
   {
     title: "Notebook",
