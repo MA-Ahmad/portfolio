@@ -82,7 +82,7 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
           <Box fontSize={15}>
             {!year && (
               <PopoverContent padding={["0.2rem", "0.2rem", "0.7rem"]}>
-                <PopoverArrow bg="pink.500" />
+                <PopoverArrow />
                 {/* <PopoverCloseButton /> */}
                 <PopoverBody>
                   <Box overflow="scroll">{children}</Box>
