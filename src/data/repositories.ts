@@ -7,6 +7,7 @@ import quickstart from "../assets/images/repositories/quickstart.jpeg";
 import cardportfolio from "../assets/images/repositories/cardportfolio.jpeg";
 import imgGallery from "../assets/images/repositories/image_gallery.png";
 import notebook from "../assets/images/repositories/notebook_app.png";
+import devto from "../assets/images/repositories/devto.png";
 
 export const repositories = [
   {
@@ -21,24 +22,26 @@ export const repositories = [
     fork: "6"
   },
   {
-    title: "Portfolio2",
-    description: "Personal portfolio app to show my skills and experience.",
-    cover: portfolio,
-    technologies: ["react", "chakraUi"],
-    url: "https://github.com/MA-Ahmad/portfolio",
-    live: "https://mahmad.me/",
-    blurHash: "L35O{d~XeoMyDhRPxv%Ms=xunmRQ",
-    stars: "10"
+    title: "Dev.to clone",
+    description:
+      "This portfolio built by using Next.js, ChakraUi and Typescript.",
+    cover: devto,
+    technologies: ["Nextjs", "chakraUi"],
+    url: "https://github.com/MA-Ahmad/dev.to-clone",
+    live: "https://dev-to-clone-ma.vercel.app",
+    blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
+    stars: "22"
   },
   {
-    title: "Card portfolio",
-    description: "A portfolio template.",
-    cover: cardportfolio,
-    technologies: ["react", "typescript", "chakraUI"],
-    url: "https://github.com/MA-Ahmad/card-portfolio",
-    live: "https://ma-ahmad.github.io/card-portfolio",
-    blurHash: "L15#hiax00og^Uf65Nj]oPfkWRf6",
-    stars: "7"
+    title: "myPortfolio",
+    description:
+      "This portfolio built by using Next.js, ChakraUi and Typescript.",
+    cover: portfoliov2,
+    technologies: ["Nextjs", "chakraUi"],
+    url: "https://github.com/MA-Ahmad/myPortfolio",
+    live: "https://my-portfolio-ma-ahmad.vercel.app/",
+    blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
+    stars: "15"
   },
   {
     title: "Notebook",
@@ -53,6 +56,16 @@ export const repositories = [
     fork: "3"
   },
   {
+    title: "Portfolio2",
+    description: "Personal portfolio app to show my skills and experience.",
+    cover: portfolio,
+    technologies: ["react", "chakraUi"],
+    url: "https://github.com/MA-Ahmad/portfolio",
+    live: "https://mahmad.me/",
+    blurHash: "L35O{d~XeoMyDhRPxv%Ms=xunmRQ",
+    stars: "10"
+  },
+  {
     title: "Blog App",
     description:
       "A React Blog App built by using libraries like ChakraUI, Formik.",
@@ -65,6 +78,16 @@ export const repositories = [
     fork: "1"
   },
   {
+    title: "Card portfolio",
+    description: "A portfolio template.",
+    cover: cardportfolio,
+    technologies: ["react", "typescript", "chakraUI"],
+    url: "https://github.com/MA-Ahmad/card-portfolio",
+    live: "https://ma-ahmad.github.io/card-portfolio",
+    blurHash: "L15#hiax00og^Uf65Nj]oPfkWRf6",
+    stars: "7"
+  },
+  {
     title: "Blog App (front-end)",
     description: "React frontend of a blog app with rails on backend.",
     cover: blog2,
@@ -72,6 +95,16 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/blog-app-react-frontend",
     live: "https://blog-frontend-react.herokuapp.com",
     blurHash: "LSN1AcH?~Wtl00={M{NG0eIoj]xa",
+    stars: "6"
+  },
+  {
+    title: "Rails template",
+    description: "A rails app template built with tailwindcss.",
+    cover: quickstart,
+    technologies: ["rails", "tailwindCss"],
+    url: "https://github.com/MA-Ahmad/quickstart-rails-tailwind",
+    live: "https://quickstart-rails-tailwind.herokuapp.com",
+    blurHash: "LLPGmg?wRPS~D%D%ozxa00?G-;R%",
     stars: "6"
   },
   {
@@ -93,17 +126,7 @@ export const repositories = [
     live: "https://react-on-rails-blog.herokuapp.com",
     blurHash: "L6O;6=00M|og00_4_4s:E9-oxVoL",
     stars: "2"
-  },
-  {
-    title: "Rails template",
-    description: "A rails app template built with tailwindcss.",
-    cover: quickstart,
-    technologies: ["rails", "tailwindCss"],
-    url: "https://github.com/MA-Ahmad/quickstart-rails-tailwind",
-    live: "https://quickstart-rails-tailwind.herokuapp.com",
-    blurHash: "LLPGmg?wRPS~D%D%ozxa00?G-;R%",
-    stars: "6"
-  },
+  }
   // {
   //   title: "Video-to-text",
   //   description: "Convert a video to text using ruby.",
