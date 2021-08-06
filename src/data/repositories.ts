@@ -15,10 +15,10 @@ export const repositories = [
     description: "Personal portfolio app to show my skills and experience.",
     cover: portfoliov2,
     technologies: ["react", "chakraUi"],
-    url: "https://github.com/MA-Ahmad/portfolio-v2",
-    live: "https://ma-ahmad.github.io/portfolio-v2",
+    url: "https://github.com/MA-Ahmad/portfolio",
+    live: "https://mahmad.me",
     blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
-    stars: "29",
+    stars: "31",
     fork: "6"
   },
   {
@@ -30,10 +30,10 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/dev.to-clone",
     live: "https://dev-to-clone-ma.vercel.app",
     blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
-    stars: "28"
+    stars: "29"
   },
   {
-    title: "myPortfolio",
+    title: "Portfolio2",
     description:
       "This portfolio built by using Next.js, ChakraUi and Typescript.",
     cover: portfoliov2,
@@ -41,7 +41,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/myPortfolio",
     live: "https://my-portfolio-ma-ahmad.vercel.app/",
     blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
-    stars: "15"
+    stars: "22"
   },
   {
     title: "Notebook",
@@ -56,12 +56,12 @@ export const repositories = [
     fork: "3"
   },
   {
-    title: "Portfolio2",
+    title: "Portfolio3",
     description: "Personal portfolio app to show my skills and experience.",
     cover: portfolio,
     technologies: ["react", "chakraUi"],
-    url: "https://github.com/MA-Ahmad/portfolio",
-    live: "https://mahmad.me/",
+    url: "https://github.com/MA-Ahmad/portfolio2",
+    live: "https://ma-ahmad.github.io/portfolio2",
     blurHash: "L35O{d~XeoMyDhRPxv%Ms=xunmRQ",
     stars: "11"
   },
