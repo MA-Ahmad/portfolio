@@ -30,7 +30,8 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/dev.to-clone",
     live: "https://dev-to-clone-ma.vercel.app",
     blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
-    stars: "29"
+    stars: "29",
+    fork: "3"
   },
   {
     title: "Portfolio2",
@@ -41,7 +42,8 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/myPortfolio",
     live: "https://my-portfolio-ma-ahmad.vercel.app/",
     blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
-    stars: "22"
+    stars: "24",
+    fork: "5"
   },
   {
     title: "Notebook",
@@ -53,7 +55,7 @@ export const repositories = [
     live: "https://ma-ahmad.github.io/notebook",
     blurHash: "L4S~x5xb~q$*~WR6MykCx^Vt4TtP",
     stars: "14",
-    fork: "3"
+    fork: "4"
   },
   {
     title: "Portfolio3",
