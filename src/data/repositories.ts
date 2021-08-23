@@ -110,16 +110,6 @@ export const repositories = [
     stars: "6"
   },
   {
-    title: "Image Gallery",
-    description:
-      "Simple gallery with images from the pixabay API. Tailwind css is built into workflow with postcss and autoprefixer.",
-    cover: imgGallery,
-    technologies: ["react", "tailwindCss"],
-    url: "https://github.com/MA-Ahmad/react-image-gallery",
-    blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
-    stars: "2"
-  },
-  {
     title: "Blogify",
     description: "A simple react+rails(RR) CRUD app with tailwindcss.",
     cover: blog3,
@@ -127,6 +117,16 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/react_rails_blog",
     live: "https://react-on-rails-blog.herokuapp.com",
     blurHash: "L6O;6=00M|og00_4_4s:E9-oxVoL",
+    stars: "4"
+  },
+  {
+    title: "Image Gallery",
+    description:
+      "Simple gallery with images from the pixabay API. Tailwind css is built into workflow with postcss and autoprefixer.",
+    cover: imgGallery,
+    technologies: ["react", "tailwindCss"],
+    url: "https://github.com/MA-Ahmad/react-image-gallery",
+    blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
     stars: "2"
   }
   // {
