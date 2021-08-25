@@ -22,18 +22,6 @@ export const repositories = [
     fork: "6"
   },
   {
-    title: "Dev.to clone",
-    description:
-      "This portfolio built by using Next.js, ChakraUi and Typescript.",
-    cover: devto,
-    technologies: ["Nextjs", "chakraUi"],
-    url: "https://github.com/MA-Ahmad/dev.to-clone",
-    live: "https://dev-to-clone-ma.vercel.app",
-    blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
-    stars: "29",
-    fork: "3"
-  },
-  {
     title: "Portfolio2",
     description:
       "This portfolio built by using Next.js, ChakraUi and Typescript.",
@@ -44,6 +32,18 @@ export const repositories = [
     blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
     stars: "29",
     fork: "5"
+  },
+  {
+    title: "Dev.to clone",
+    description:
+      "This portfolio built by using Next.js, ChakraUi and Typescript.",
+    cover: devto,
+    technologies: ["Nextjs", "chakraUi"],
+    url: "https://github.com/MA-Ahmad/dev.to-clone",
+    live: "https://dev-to-clone-ma.vercel.app",
+    blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
+    stars: "29",
+    fork: "3"
   },
   {
     title: "Notebook",
