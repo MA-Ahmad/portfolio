@@ -76,8 +76,8 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/reactBlog",
     live: "https://ma-ahmad.github.io/reactBlog",
     blurHash: "LMMaw^IV~pxu00%LRjNGAIIVadt6",
-    stars: "9",
-    fork: "1"
+    stars: "13",
+    fork: "2"
   },
   {
     title: "Card portfolio",
