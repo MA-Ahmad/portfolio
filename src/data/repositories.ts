@@ -65,7 +65,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/portfolio2",
     live: "https://ma-ahmad.github.io/portfolio2",
     blurHash: "L35O{d~XeoMyDhRPxv%Ms=xunmRQ",
-    stars: "11"
+    stars: "13"
   },
   {
     title: "Blog App",
@@ -87,7 +87,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/card-portfolio",
     live: "https://ma-ahmad.github.io/card-portfolio",
     blurHash: "L15#hiax00og^Uf65Nj]oPfkWRf6",
-    stars: "8"
+    stars: "9"
   },
   {
     title: "Blog App (front-end)",
