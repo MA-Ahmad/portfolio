@@ -88,7 +88,8 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/card-portfolio",
     live: "https://ma-ahmad.github.io/card-portfolio",
     blurHash: "L15#hiax00og^Uf65Nj]oPfkWRf6",
-    stars: "9"
+    stars: "9",
+    fork: "2"
   },
   {
     title: "Blog App (front-end)",
@@ -98,7 +99,8 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/blog-app-react-frontend",
     live: "https://blog-frontend-react.herokuapp.com",
     blurHash: "LSN1AcH?~Wtl00={M{NG0eIoj]xa",
-    stars: "6"
+    stars: "10",
+    fork: '1'
   },
   {
     title: "Rails template",
