@@ -99,7 +99,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/blog-app-react-frontend",
     live: "https://blog-frontend-react.herokuapp.com",
     blurHash: "LSN1AcH?~Wtl00={M{NG0eIoj]xa",
-    stars: "10",
+    stars: "11",
     fork: '1'
   },
   {
@@ -110,7 +110,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/quickstart-rails-tailwind",
     live: "https://quickstart-rails-tailwind.herokuapp.com",
     blurHash: "LLPGmg?wRPS~D%D%ozxa00?G-;R%",
-    stars: "6"
+    stars: "8"
   },
   {
     title: "Blogify",
