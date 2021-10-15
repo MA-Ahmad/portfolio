@@ -81,17 +81,6 @@ export const repositories = [
     fork: "2"
   },
   {
-    title: "Card portfolio",
-    description: "A portfolio template.",
-    cover: cardportfolio,
-    technologies: ["react", "typescript", "chakraUI"],
-    url: "https://github.com/MA-Ahmad/card-portfolio",
-    live: "https://ma-ahmad.github.io/card-portfolio",
-    blurHash: "L15#hiax00og^Uf65Nj]oPfkWRf6",
-    stars: "9",
-    fork: "2"
-  },
-  {
     title: "Blog App (front-end)",
     description: "React frontend of a blog app with rails on backend.",
     cover: blog2,
@@ -101,6 +90,17 @@ export const repositories = [
     blurHash: "LSN1AcH?~Wtl00={M{NG0eIoj]xa",
     stars: "11",
     fork: '1'
+  },
+  {
+    title: "Card portfolio",
+    description: "A portfolio template.",
+    cover: cardportfolio,
+    technologies: ["react", "typescript", "chakraUI"],
+    url: "https://github.com/MA-Ahmad/card-portfolio",
+    live: "https://ma-ahmad.github.io/card-portfolio",
+    blurHash: "L15#hiax00og^Uf65Nj]oPfkWRf6",
+    stars: "9",
+    fork: "2"
   },
   {
     title: "Rails template",
