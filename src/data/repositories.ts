@@ -130,7 +130,7 @@ export const repositories = [
     technologies: ["react", "tailwindCss"],
     url: "https://github.com/MA-Ahmad/react-image-gallery",
     blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
-    stars: "2"
+    stars: "3"
   }
   // {
   //   title: "Blog App (back-end)",
