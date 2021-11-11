@@ -54,7 +54,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/notebook",
     live: "https://ma-ahmad.github.io/notebook",
     blurHash: "L4S~x5xb~q$*~WR6MykCx^Vt4TtP",
-    stars: "17",
+    stars: "18",
     fork: "7"
   },
   {
