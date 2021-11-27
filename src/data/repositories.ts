@@ -66,7 +66,7 @@ export const repositories = [
     live: "https://ma-ahmad.github.io/portfolio2",
     blurHash: "L35O{d~XeoMyDhRPxv%Ms=xunmRQ",
     stars: "15",
-    fork: "3"
+    fork: "5"
   },
   {
     title: "Blog App",
