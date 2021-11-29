@@ -42,7 +42,7 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/dev.to-clone",
     live: "https://dev-to-clone-ma.vercel.app",
     blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
-    stars: "52",
+    stars: "53",
     fork: "4"
   },
   {
