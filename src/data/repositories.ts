@@ -88,8 +88,8 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/blog-app-react-frontend",
     live: "https://blog-frontend-react.herokuapp.com",
     blurHash: "LSN1AcH?~Wtl00={M{NG0eIoj]xa",
-    stars: "11",
-    fork: '1'
+    stars: "12",
+    fork: '3'
   },
   {
     title: "Card portfolio",
