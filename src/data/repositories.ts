@@ -16,7 +16,7 @@ export const repositories = [
     cover: portfoliov2,
     technologies: ["react", "chakraUi"],
     url: "https://github.com/MA-Ahmad/portfolio",
-    live: "https://mahmad.me",
+    live: "https://ma-ahmad.github.io/portfolio",
     blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
     stars: "64",
     fork: "12"
@@ -28,7 +28,7 @@ export const repositories = [
     cover: portfoliov2,
     technologies: ["Nextjs", "chakraUi"],
     url: "https://github.com/MA-Ahmad/myPortfolio",
-    live: "https://my-portfolio-ma-ahmad.vercel.app/",
+    live: "https://mahmad.me",
     blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
     stars: "65",
     fork: "14"
