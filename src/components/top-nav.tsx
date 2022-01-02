@@ -103,7 +103,7 @@ export default function TopNav() {
               <Avatar
                 as={Link}
                 size={"sm"}
-                href={"/"}
+                href={"/portfolio"}
                 src={UserIcon}
                 // src={"https://avatars2.githubusercontent.com/u/37842853?v=4"}
               />
