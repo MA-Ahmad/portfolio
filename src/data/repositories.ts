@@ -11,18 +11,7 @@ import devto from "../assets/images/repositories/devto.png";
 
 export const repositories = [
   {
-    title: "Portfolio1",
-    description: "Personal portfolio app to show my skills and experience.",
-    cover: portfoliov2,
-    technologies: ["react", "chakraUi"],
-    url: "https://github.com/MA-Ahmad/portfolio",
-    live: "https://ma-ahmad.github.io/portfolio",
-    blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
-    stars: "65",
-    fork: "12"
-  },
-  {
-    title: "Portfolio2",
+    title: "myPortfolio",
     description:
       "This portfolio built by using Next.js, ChakraUi and Typescript.",
     cover: portfoliov2,
@@ -30,7 +19,18 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/myPortfolio",
     live: "https://mahmad.me",
     blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
-    stars: "66",
+    stars: "140",
+    fork: "31"
+  },
+  {
+    title: "Portfolio",
+    description: "Personal portfolio app to show my skills and experience.",
+    cover: portfoliov2,
+    technologies: ["react", "chakraUi"],
+    url: "https://github.com/MA-Ahmad/portfolio",
+    live: "https://ma-ahmad.github.io/portfolio",
+    blurHash: "L25#he^nryxc^-w$V{V_56bqx[M{",
+    stars: "81",
     fork: "14"
   },
   {
@@ -42,8 +42,8 @@ export const repositories = [
     url: "https://github.com/MA-Ahmad/dev.to-clone",
     live: "https://dev-to-clone-ma.vercel.app",
     blurHash: "LMOWg4wIS$WBH?sAkCR*?^bcnNoy",
-    stars: "54",
-    fork: "5"
+    stars: "64",
+    fork: "8"
   },
   {
     title: "Notebook",
@@ -58,7 +58,7 @@ export const repositories = [
     fork: "7"
   },
   {
-    title: "Portfolio3",
+    title: "Portfolio2",
     description: "Personal portfolio app to show my skills and experience.",
     cover: portfolio,
     technologies: ["react", "chakraUi"],
